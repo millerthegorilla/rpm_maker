@@ -19,6 +19,14 @@ if [ ! -d "./log" ]; then
   mkdir -p "./log"
 fi
 
+if [ ! -e "./log/getpkgurls.log" ]; then
+	touch "./log/getpkgurls.log"
+fi
+
+if [ ! -e "./lists/urls-for-lynx.list" ]; then
+	touch "./lists/urls-for-lynx.lists"
+fi
+
 packages()
 {
 	python3 $GETPKGS
@@ -106,7 +114,8 @@ export PPA
 export ARCH
 packages
 if (($? == 0)); then
-	lynxdump
+	bob=lynxdump
+	echo $bob
 fi
 if (($? == 0)); then
 	rpmbuild

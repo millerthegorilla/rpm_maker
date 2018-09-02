@@ -70,7 +70,7 @@ try:
 	sys.exit(0)
 except Exception as e:
 	print(e)
-	fl = open("$PROJ_ROOTlog/getpkgurls.log", "a")
+	fl = open(proj_root + "/log/getpkgurls.log", "a")
 	fl.write(e)
 	fl.close
 	sys.exit(1)
