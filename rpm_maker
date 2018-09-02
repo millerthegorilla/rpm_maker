@@ -1,0 +1,117 @@
+#!/bin/bash
+PROJ_ROOT="$(pwd)"
+TMP_DIR="./tmp"
+GETPKGS="$PROJ_ROOT/scripts/getpkgurls.py"
+DEB_URLS="$PROJ_ROOT/lists/deburls.list"
+filename=$DEB_URLS
+ARCH="amd64"
+TEAM="kxstudio-debian"
+PPA="plugins"
+CLEAN=0
+
+export PROJ_ROOT
+
+if [ ! -d "$TMP_DIR" ]; then
+  mkdir -p $TMP_DIR
+fi
+
+if [ ! -d "./log" ]; then
+  mkdir -p "./log"
+fi
+
+packages()
+{
+	python3 $GETPKGS
+}
+
+lynxdump()
+{
+	$PROJ_ROOT/scripts/lynxdump.sh
+	if (($? > 0)); then
+		echo "lynx failed to dump correctly"
+		exit 1
+	fi
+}
+
+rpmbuild()
+{
+	echo $filename
+	cd $TMP_DIR
+	$PROJ_ROOT/scripts/build_rpms.sh $filename
+}
+
+usage()
+{
+	echo "usage: rpm_maker <options>"
+	echo "		-r | --rpmbuild filename - buildrpm from existing list"
+	echo "					   where filename is optional listname>"
+	echo "		-l | --lynxdump 	 - convert list of urls from launchpad"
+	echo "					   to urls to debs"
+	echo "		-g | --getpkgs		 - get list of pkgs from launchpad"
+	echo "		-p | --setppa		 - set PPA to use for obtaining"
+	echo "					   urllist from launchpad"
+	echo "		-t | --setteam		 - set Team to use for obtaining"
+	echo "					   urllist from launchpad"
+	echo "		-a | --arch		 - specify the architecture amd64 | x386"
+	echo "		_________________________________________________________"
+	echo "		no parameters will download debs and build them into ./tmp/rpms"
+}
+
+while [ "$1" != "" ]; do
+    case $1 in
+        -r | --rpmbuild )       shift
+				if [ "$1" != '' ]; then
+                                	filename=$1
+				fi
+				rpmbuild
+				exit
+                                ;;
+	-l | --lynxdump )	lynxdump
+				exit
+				;;
+	-g | --getpkgs )	packages
+				exit
+				;;
+	-t | --team )		shift
+				if [ "$1" != '' ]; then
+                                        TEAM=$1
+					export TEAM
+				fi
+				;;
+	-p | --ppa )		shift
+				if [ "$1" != '' ]; then
+                                        PPA=$1
+					export PPA
+				fi
+				;;
+	-a | --arch )		shift
+				if [ "$1" != '' ]; then
+                                        ARCH=$1
+					export ARCH
+				fi
+				;;
+	-c | --clean )		CLEAN=1
+				;;
+        -h | --help )           usage
+                                exit 1
+                                ;;
+        * )                     usage
+                                exit 1
+    esac
+    shift
+done
+
+export TEAM
+export PPA
+export ARCH
+packages
+if (($? == 0)); then
+	lynxdump
+fi
+if (($? == 0)); then
+	rpmbuild
+fi
+if [ $CLEAN==1 ]; then
+	sudo rm -rf tmp/*
+fi
+exit 0
