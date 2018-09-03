@@ -8,8 +8,13 @@ ARCH="amd64"
 TEAM="kxstudio-debian"
 PPA="plugins"
 CLEAN=0
+DEBS_ONLY=false
 
+export DEBS_ONLY
 export PROJ_ROOT
+export ARCH
+export TEAM
+export PPA
 
 if [ ! -d "$TMP_DIR" ]; then
   mkdir -p $TMP_DIR
@@ -23,9 +28,9 @@ if [ ! -e "./log/getpkgurls.log" ]; then
 	touch "./log/getpkgurls.log"
 fi
 
-if [ ! -e "./lists/urls-for-lynx.list" ]; then
-	touch "./lists/urls-for-lynx.lists"
-fi
+#if [ ! -e "./lists/urls-for-lynx.list" ]; then
+#	touch "./lists/urls-for-lynx.lists"
+#fi
 
 packages()
 {
@@ -43,7 +48,7 @@ lynxdump()
 
 rpmbuild()
 {
-	echo $filename
+	echo "Building RPMS from list at $PROJ_ROOT$filename"
 	cd $TMP_DIR
 	$PROJ_ROOT/scripts/build_rpms.sh $filename
 }
@@ -61,7 +66,11 @@ usage()
 	echo "		-t | --setteam		 - set Team to use for obtaining"
 	echo "					   urllist from launchpad"
 	echo "		-a | --arch		 - specify the architecture amd64 | x386"
-	echo "		_________________________________________________________"
+	echo "		-d | --debs		 - download the debs files but do not"
+	echo "					   process them with alien etc"
+	echo "		-c | --clean		 - clean the tmp directory of build"
+	echo "					   files etc when rpm_maker is finished"
+	echo "		________________________________________________________________"
 	echo "		no parameters will download debs and build them into ./tmp/rpms"
 }
 
@@ -100,6 +109,9 @@ while [ "$1" != "" ]; do
 				;;
 	-c | --clean )		CLEAN=1
 				;;
+	-d | --debs )		DEBS_ONLY=true
+				export DEBS_ONLY
+				;;
         -h | --help )           usage
                                 exit 1
                                 ;;
@@ -109,16 +121,17 @@ while [ "$1" != "" ]; do
     shift
 done
 
-export TEAM
-export PPA
-export ARCH
 packages
 if (($? == 0)); then
 	bob=lynxdump
-	echo $bob
+	echo "bob says hi with a $bob"
+else
+	exit $?
 fi
 if (($? == 0)); then
 	rpmbuild
+else
+	exit $?
 fi
 if [ $CLEAN==1 ]; then
 	sudo rm -rf tmp/*

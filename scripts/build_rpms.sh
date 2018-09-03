@@ -7,33 +7,34 @@ RPM_ROOT="$CWD"
 BUILT_RPMS="$PROJ_ROOT/rpms/"
 ARCH="amd64"
 IN_FILE="$PROJ_ROOT/lists/deburls.list"
+COUNTER=0
 
 if [ ! -e "$PROJ_ROOT/log/rpms_manifest.log" ];then
-	mv $PROJ_ROOT/log/rpms_manifest.log $PROJ_ROOT/log/rpms_manifest.log
+	mv $PROJ_ROOT/log/rpms_manifest.log $PROJ_ROOT/log/rpms_manifest.log.old
 fi
 touch $PROJ_ROOT/log/rpms_manifest.log
 
+if [ ! -e "$PROJ_ROOT/log/build_rpms.log" ];then
+	mv $PROJ_ROOT/log/build_rpms.log $PROJ_ROOT/log/build_rpms.log.old
+fi
+touch $PROJ_ROOT/log/build_rpms.log
+
+if [ $# -ne 0 ]; then
+	IN_FILE=$1
+	if [ ! -s $IN_FILE ]; then
+		IN_FILE=$PROJ_ROOT/$IN_FILE
+		if [ ! -s $IN_FILE ]; then
+			echo "$IN_FILE File for scripts/build_rpms.sh does not exist"
+			echo "perhaps check the options to rpm_maker?"
+			exit 127
+		fi
+	fi
+fi
+
 if [ -s $IN_FILE ]; then
 	COUNTER_MAX=$(wc -l < $IN_FILE)
-else
-	echo "$IN_FILE File for scripts/build_rpms.sh does not exist"
-	echo "perhaps check the options to rpm_maker?"
-	exit 127
-fi
-COUNTER=0
-
-if [ -e $1 ]; then
-	IN_FILE=$1
-fi
-
-if [ ! -s $IN_FILE ]; then
-	echo "deb urls list does not exist"
-	exit 127
-fi
-
-if [ $# -eq 0 ]
-  then
-    echo "you need to reference a list!"
+elif [ -e $IN_FILE ]; then
+	echo "deb urls list is empty. exiting"
 	exit 127
 fi
 
@@ -53,11 +54,11 @@ if [ ! -d "$BUILT_RPMS" ]; then
   mkdir -p $BUILT_RPMS
 fi
 
-
 sort $IN_FILE | uniq -u | while read -r line || [[ -n "$line" ]]; do
 	trap "exit" INT
 	filename="$line"
-	tmpurl=$(echo $filename | grep -E 'https.*?amd64\.deb' -o)
+	echo "filename is $filename"
+	tmpurl=$(echo $filename | grep -E 'https.*?\.deb' -o)
 	echo "tmpurl is $tmpurl"
 	tmpfile=$(echo $tmpurl | grep -E '[^/]+(?=/$|$)' -o)
 	echo "arch is $ARCH"
@@ -70,7 +71,9 @@ sort $IN_FILE | uniq -u | while read -r line || [[ -n "$line" ]]; do
 		echo "getting file"
 		wget $filename -O $tmppath
 	fi
-	if [ $? -ne 0 ]; then
+	RET=$?
+	echo "debs_only is $DEBS_ONLY"
+	if [[ $RET -eq 0 && $DEBS_ONLY==false ]]; then
 		cd $RPM_BUILD_ROOT
 		sudo alien -r -g -v $tmppath >> "$PROJ_ROOT/log/build_rpms.log" 2>&1 | tee -a "$PROJ_ROOT/log/build_rpms.log"
 
@@ -108,6 +111,8 @@ sort $IN_FILE | uniq -u | while read -r line || [[ -n "$line" ]]; do
 		cd $CWD
 		sudo rm -rf $RPM_BUILD_ROOT*
 		rm $DEBS_DIR*
+	else
+		echo "unable to download $filename"
 	fi
 	COUNTER=$((COUNTER + 1))
 	echo -ne "Building $COUNTER of $COUNTER_MAX RPMS"'\r'

@@ -1,0 +1,1022 @@
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+Unknown type of package, /home/james/Src/kxstudio_plugins/tmp/debs/.
+error: File /home/james/Src/kxstudio_plugins/tmp/root/rpmbuild/BUILDROOT/ is not a regular file.
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir amsynth-dssi-1.8.0
+	chmod 755 amsynth-dssi-1.8.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb amsynth-dssi-1.8.0
+Directory amsynth-dssi-1.8.0 prepared.
+Processing files: amsynth-dssi-1.8.0-2.x86_64
+Provides: amsynth-dssi = 1.8.0-2 amsynth-dssi(x86-64) = 1.8.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
+Wrote: ../amsynth-dssi-1.8.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ogrZOx
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.nOBDN2
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir zynaddsubfx-dssi-3.0.3
+	chmod 755 zynaddsubfx-dssi-3.0.3
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb zynaddsubfx-dssi-3.0.3
+Directory zynaddsubfx-dssi-3.0.3 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+Wrote: ../zynaddsubfx-dssi-3.0.3-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.n71d5x
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.tGHFN8
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-32chan-2.1.0
+	chmod 755 linuxsampler-lv2-32chan-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-32chan-2.1.0
+Directory linuxsampler-lv2-32chan-2.1.0 prepared.
+Processing files: linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Provides: linuxsampler-lv2-32chan = 2.1.0-2 linuxsampler-lv2-32chan(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Wrote: ../linuxsampler-lv2-32chan-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.sVT5pb
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.nsWfZT
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-dssi-2.1.0
+	chmod 755 linuxsampler-dssi-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb linuxsampler-dssi-2.1.0
+Directory linuxsampler-dssi-2.1.0 prepared.
+Processing files: linuxsampler-dssi-2.1.0-2.x86_64
+Provides: linuxsampler-dssi = 2.1.0-2 linuxsampler-dssi(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-dssi-2.1.0-2.x86_64
+Wrote: ../linuxsampler-dssi-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.tsbZ17
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-dssi-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.QdsLfZ
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-2.1.0
+	chmod 755 linuxsampler-lv2-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-2.1.0
+Directory linuxsampler-lv2-2.1.0 prepared.
+Processing files: linuxsampler-lv2-2.1.0-2.x86_64
+Provides: linuxsampler-lv2 = 2.1.0-2 linuxsampler-lv2(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-2.1.0-2.x86_64
+Wrote: ../linuxsampler-lv2-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.xQkyI6
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-lv2-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.TGIWl6
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-vst-2.1.0
+	chmod 755 linuxsampler-vst-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb linuxsampler-vst-2.1.0
+Directory linuxsampler-vst-2.1.0 prepared.
+Processing files: linuxsampler-vst-2.1.0-2.x86_64
+Provides: linuxsampler-vst = 2.1.0-2 linuxsampler-vst(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-vst-2.1.0-2.x86_64
+Wrote: ../linuxsampler-vst-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.bI6EO6
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-vst-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.3reGdf
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir argotlunar-20180211
+	chmod 755 argotlunar-20180211
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/argotlunar_20180211-1kxstudio2_amd64.deb argotlunar-20180211
+Directory argotlunar-20180211 prepared.
+Processing files: argotlunar-20180211-2.x86_64
+Provides: argotlunar = 20180211-2 argotlunar(x86-64) = 20180211-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/argotlunar-20180211-2.x86_64
+Wrote: ../argotlunar-20180211-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.AxYwJu
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/argotlunar-20180211-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.nob7mK
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir pdpulp-20180211
+	chmod 755 pdpulp-20180211
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/pdpulp_20180211-1kxstudio2_amd64.deb pdpulp-20180211
+Directory pdpulp-20180211 prepared.
+Processing files: pdpulp-20180211-2.x86_64
+Provides: pdpulp = 20180211-2 pdpulp(x86-64) = 20180211-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/pdpulp-20180211-2.x86_64
+Wrote: ../pdpulp-20180211-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ekRWaC
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/pdpulp-20180211-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.FwBTf6
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir protoplug-20180211
+	chmod 755 protoplug-20180211
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/protoplug_20180211-1kxstudio2_amd64.deb protoplug-20180211
+Directory protoplug-20180211 prepared.
+Processing files: protoplug-20180211-2.x86_64
+Provides: protoplug = 20180211-2 protoplug(x86-64) = 20180211-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/protoplug-20180211-2.x86_64
+Wrote: ../protoplug-20180211-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.lh38PX
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/protoplug-20180211-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.TduUjK
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir radium-compressor-20180211
+	chmod 755 radium-compressor-20180211
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/radium-compressor_20180211-1kxstudio2_amd64.deb radium-compressor-20180211
+Directory radium-compressor-20180211 prepared.
+Processing files: radium-compressor-20180211-2.x86_64
+Provides: radium-compressor = 20180211-2 radium-compressor(x86-64) = 20180211-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/radium-compressor-20180211-2.x86_64
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir amsynth-dssi-1.8.0
+	chmod 755 amsynth-dssi-1.8.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb amsynth-dssi-1.8.0
+Directory amsynth-dssi-1.8.0 prepared.
+Processing files: radium-compressor-20180211-2.x86_64
+Provides: radium-compressor = 20180211-2 radium-compressor(x86-64) = 20180211-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/radium-compressor-20180211-2.x86_64
+Wrote: ../radium-compressor-20180211-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.OTLBhY
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/radium-compressor-20180211-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.S9H7ND
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir zynaddsubfx-dssi-3.0.3
+	chmod 755 zynaddsubfx-dssi-3.0.3
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb zynaddsubfx-dssi-3.0.3
+Directory zynaddsubfx-dssi-3.0.3 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+Wrote: ../zynaddsubfx-dssi-3.0.3-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.c95iaW
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ycNlzH
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-32chan-2.1.0
+	chmod 755 linuxsampler-lv2-32chan-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-32chan-2.1.0
+Directory linuxsampler-lv2-32chan-2.1.0 prepared.
+Processing files: linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Provides: linuxsampler-lv2-32chan = 2.1.0-2 linuxsampler-lv2-32chan(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Wrote: ../linuxsampler-lv2-32chan-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.tZYywO
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.TjkWZH
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-dssi-2.1.0
+	chmod 755 linuxsampler-dssi-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb linuxsampler-dssi-2.1.0
+Directory linuxsampler-dssi-2.1.0 prepared.
+Processing files: linuxsampler-dssi-2.1.0-2.x86_64
+Provides: linuxsampler-dssi = 2.1.0-2 linuxsampler-dssi(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-dssi-2.1.0-2.x86_64
+Wrote: ../linuxsampler-dssi-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.cxBaTZ
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-dssi-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.qkQft2
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-2.1.0
+	chmod 755 linuxsampler-lv2-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-2.1.0
+Directory linuxsampler-lv2-2.1.0 prepared.
+Processing files: linuxsampler-lv2-2.1.0-2.x86_64
+Provides: linuxsampler-lv2 = 2.1.0-2 linuxsampler-lv2(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-2.1.0-2.x86_64
+Wrote: ../linuxsampler-lv2-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Wa6xut
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-lv2-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.CbexbG
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-vst_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir amsynth-dssi-1.8.0
+	chmod 755 amsynth-dssi-1.8.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb amsynth-dssi-1.8.0
+Directory amsynth-dssi-1.8.0 prepared.
+Processing files: amsynth-dssi-1.8.0-2.x86_64
+Provides: amsynth-dssi = 1.8.0-2 amsynth-dssi(x86-64) = 1.8.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
+Wrote: ../amsynth-dssi-1.8.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.u4yaR8
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.1vwbJR
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir zynaddsubfx-dssi-3.0.3
+	chmod 755 zynaddsubfx-dssi-3.0.3
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb zynaddsubfx-dssi-3.0.3
+Directory zynaddsubfx-dssi-3.0.3 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+Wrote: ../zynaddsubfx-dssi-3.0.3-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.A8fcK3
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.OqPDkS
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-32chan-2.1.0
+	chmod 755 linuxsampler-lv2-32chan-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-32chan-2.1.0
+Directory linuxsampler-lv2-32chan-2.1.0 prepared.
+Processing files: linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Provides: linuxsampler-lv2-32chan = 2.1.0-2 linuxsampler-lv2-32chan(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir amsynth-dssi-1.8.0
+	chmod 755 amsynth-dssi-1.8.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb amsynth-dssi-1.8.0
+Directory amsynth-dssi-1.8.0 prepared.
+Processing files: amsynth-dssi-1.8.0-2.x86_64
+Provides: amsynth-dssi = 1.8.0-2 amsynth-dssi(x86-64) = 1.8.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
+Wrote: ../amsynth-dssi-1.8.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.12XWUR
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/amsynth-dssi-1.8.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.9RYdtn
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir zynaddsubfx-dssi-3.0.3
+	chmod 755 zynaddsubfx-dssi-3.0.3
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb zynaddsubfx-dssi-3.0.3
+Directory zynaddsubfx-dssi-3.0.3 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb' prerm 2>/dev/null
+	mkdir amsynth-dssi-1.8.0
+	chmod 755 amsynth-dssi-1.8.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/amsynth-dssi_1.8.0-1kxstudio2_amd64.deb amsynth-dssi-1.8.0
+Directory amsynth-dssi-1.8.0 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+Wrote: ../zynaddsubfx-dssi-3.0.3-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.lZZsGC
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.EiQiXg
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir zynaddsubfx-dssi-3.0.3
+	chmod 755 zynaddsubfx-dssi-3.0.3
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/zynaddsubfx-dssi_3.0.3-1kxstudio1_amd64.deb zynaddsubfx-dssi-3.0.3
+Directory zynaddsubfx-dssi-3.0.3 prepared.
+Processing files: zynaddsubfx-dssi-3.0.3-2.x86_64
+Provides: zynaddsubfx-dssi = 3.0.3-2 zynaddsubfx-dssi(x86-64) = 3.0.3-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
+Wrote: ../zynaddsubfx-dssi-3.0.3-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ljTGHG
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/zynaddsubfx-dssi-3.0.3-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.7zF6Tq
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-lv2-32chan-2.1.0
+	chmod 755 linuxsampler-lv2-32chan-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-lv2-32chan_2.1.0-1kxstudio1_amd64.deb linuxsampler-lv2-32chan-2.1.0
+Directory linuxsampler-lv2-32chan-2.1.0 prepared.
+Processing files: linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Provides: linuxsampler-lv2-32chan = 2.1.0-2 linuxsampler-lv2-32chan(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
+Wrote: ../linuxsampler-lv2-32chan-2.1.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.qgWIba
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/linuxsampler-lv2-32chan-2.1.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.3aDdQ1
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir linuxsampler-dssi-2.1.0
+	chmod 755 linuxsampler-dssi-2.1.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/linuxsampler-dssi_2.1.0-1kxstudio1_amd64.deb linuxsampler-dssi-2.1.0
+Directory linuxsampler-dssi-2.1.0 prepared.
+Processing files: linuxsampler-dssi-2.1.0-2.x86_64
+Provides: linuxsampler-dssi = 2.1.0-2 linuxsampler-dssi(x86-64) = 2.1.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/linuxsampler-dssi-2.1.0-2.x86_64
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir drmr-0.1
+	chmod 755 drmr-0.1
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb drmr-0.1
+Directory drmr-0.1 prepared.
+Processing files: drmr-0.1-2.x86_64
+Provides: drmr = 0.1-2 drmr(x86-64) = 0.1-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
+Wrote: ../drmr-0.1-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.aP4GMr
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.F94k0E
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' prerm 2>/dev/null
+	mkdir gxvoxtonebender-20170424
+	chmod 755 gxvoxtonebender-20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb gxvoxtonebender-20170424
+Directory gxvoxtonebender-20170424 prepared.
+Processing files: gxvoxtonebender-20170424-2.x86_64
+Provides: gxvoxtonebender = 20170424-2 gxvoxtonebender(x86-64) = 20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
+Wrote: ../gxvoxtonebender-20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.XWpbKB
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Du8EjV
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir rkrlv2-0.0.0+git20170424
+	chmod 755 rkrlv2-0.0.0+git20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb rkrlv2-0.0.0+git20170424
+Directory rkrlv2-0.0.0+git20170424 prepared.
+Processing files: rkrlv2-0.0.0+git20170424-2.x86_64
+Provides: rkrlv2 = 0.0.0+git20170424-2 rkrlv2(x86-64) = 0.0.0+git20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
+Wrote: ../rkrlv2-0.0.0+git20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ZsjvFL
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.RztOXg
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' prerm 2>/dev/null
+Warning: Skipping conversion of scripts in package sineshaper: postinst postrm
+Warning: Use the --scripts parameter to include the scripts.
+	mkdir sineshaper-0.4.2
+	chmod 755 sineshaper-0.4.2
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb sineshaper-0.4.2
+Directory sineshaper-0.4.2 prepared.
+Processing files: sineshaper-0.4.2-9.x86_64
+Provides: sineshaper = 0.4.2-9 sineshaper(x86-64) = 0.4.2-9
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash libatkmm-1.6.so.1()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgdkmm-2.4.so.1()(64bit) libglademm-2.4.so.1()(64bit) libglib-2.0.so.0()(64bit) libglibmm-2.4.so.1()(64bit) libgtkmm-2.4.so.1()(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.15)(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libsigc-2.0.so.0()(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/sineshaper-0.4.2-9.x86_64
+Wrote: ../sineshaper-0.4.2-9.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Jw9fna
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/sineshaper-0.4.2-9.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Y6WBZJ
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir midi-matrix.lv2-0.20.0
+	chmod 755 midi-matrix.lv2-0.20.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb midi-matrix.lv2-0.20.0
+Directory midi-matrix.lv2-0.20.0 prepared.
+Processing files: midi-matrix.lv2-0.20.0-2.x86_64
+Provides: midi-matrix.lv2 = 0.20.0-2 midi-matrix.lv2(x86-64) = 0.20.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/midi-matrix.lv2-0.20.0-2.x86_64
+Wrote: ../midi-matrix.lv2-0.20.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.AQgQDy
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/midi-matrix.lv2-0.20.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ZXWpVh
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir vm.lv2-0.4.0
+	chmod 755 vm.lv2-0.4.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/vm.lv2_0.4.0-1kxstudio1_amd64.deb vm.lv2-0.4.0
+Directory vm.lv2-0.4.0 prepared.
+Processing files: vm.lv2-0.4.0-2.x86_64
+Provides: vm.lv2 = 0.4.0-2 vm.lv2(x86-64) = 0.4.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/vm.lv2-0.4.0-2.x86_64
+Wrote: ../vm.lv2-0.4.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.43M7uf
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/vm.lv2-0.4.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Q1HrV3
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir sherlock.lv2-0.14.0
+	chmod 755 sherlock.lv2-0.14.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/sherlock.lv2_0.14.0-1kxstudio1_amd64.deb sherlock.lv2-0.14.0
+Directory sherlock.lv2-0.14.0 prepared.
+Processing files: sherlock.lv2-0.14.0-2.x86_64
+Provides: sherlock.lv2 = 0.14.0-2 sherlock.lv2(x86-64) = 0.14.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/sherlock.lv2-0.14.0-2.x86_64
+Wrote: ../sherlock.lv2-0.14.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.z8jzIn
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/sherlock.lv2-0.14.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.GRamqf
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/moony.lv2_0.22.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/moony.lv2_0.22.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/moony.lv2_0.22.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/moony.lv2_0.22.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir drmr-0.1
+	chmod 755 drmr-0.1
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb drmr-0.1
+Directory drmr-0.1 prepared.
+Processing files: drmr-0.1-2.x86_64
+Provides: drmr = 0.1-2 drmr(x86-64) = 0.1-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
+Wrote: ../drmr-0.1-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.D6TMTh
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.9ckHoY
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' prerm 2>/dev/null
+	mkdir gxvoxtonebender-20170424
+	chmod 755 gxvoxtonebender-20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb gxvoxtonebender-20170424
+Directory gxvoxtonebender-20170424 prepared.
+Processing files: gxvoxtonebender-20170424-2.x86_64
+Provides: gxvoxtonebender = 20170424-2 gxvoxtonebender(x86-64) = 20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
+Wrote: ../gxvoxtonebender-20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ovnwoT
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.EcxtkE
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir rkrlv2-0.0.0+git20170424
+	chmod 755 rkrlv2-0.0.0+git20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb rkrlv2-0.0.0+git20170424
+Directory rkrlv2-0.0.0+git20170424 prepared.
+Processing files: rkrlv2-0.0.0+git20170424-2.x86_64
+Provides: rkrlv2 = 0.0.0+git20170424-2 rkrlv2(x86-64) = 0.0.0+git20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
+Wrote: ../rkrlv2-0.0.0+git20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.bao1X9
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.VMNWF7
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' prerm 2>/dev/null
+Warning: Skipping conversion of scripts in package sineshaper: postinst postrm
+Warning: Use the --scripts parameter to include the scripts.
+	mkdir sineshaper-0.4.2
+	chmod 755 sineshaper-0.4.2
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb sineshaper-0.4.2
+Directory sineshaper-0.4.2 prepared.
+Processing files: sineshaper-0.4.2-9.x86_64
+Provides: sineshaper = 0.4.2-9 sineshaper(x86-64) = 0.4.2-9
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash libatkmm-1.6.so.1()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgdkmm-2.4.so.1()(64bit) libglademm-2.4.so.1()(64bit) libglib-2.0.so.0()(64bit) libglibmm-2.4.so.1()(64bit) libgtkmm-2.4.so.1()(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.15)(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libsigc-2.0.so.0()(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/sineshaper-0.4.2-9.x86_64
+Wrote: ../sineshaper-0.4.2-9.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.MiGvwz
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/sineshaper-0.4.2-9.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.FXxNjB
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir midi-matrix.lv2-0.20.0
+	chmod 755 midi-matrix.lv2-0.20.0
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/midi-matrix.lv2_0.20.0-1kxstudio1_amd64.deb midi-matrix.lv2-0.20.0
+Directory midi-matrix.lv2-0.20.0 prepared.
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir drmr-0.1
+	chmod 755 drmr-0.1
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb drmr-0.1
+Directory drmr-0.1 prepared.
+Processing files: midi-matrix.lv2-0.20.0-2.x86_64
+Provides: midi-matrix.lv2 = 0.20.0-2 midi-matrix.lv2(x86-64) = 0.20.0-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/midi-matrix.lv2-0.20.0-2.x86_64
+Wrote: ../midi-matrix.lv2-0.20.0-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.zbwFqi
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/midi-matrix.lv2-0.20.0-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.jiuN3j
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir drmr-0.1
+	chmod 755 drmr-0.1
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/drmr_0.1-1kxstudio1_amd64.deb drmr-0.1
+Directory drmr-0.1 prepared.
+Processing files: drmr-0.1-2.x86_64
+Provides: drmr = 0.1-2 drmr(x86-64) = 0.1-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
+Wrote: ../drmr-0.1-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.SmxHLg
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/drmr-0.1-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.JLBJ2p
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb' prerm 2>/dev/null
+	mkdir gxvoxtonebender-20170424
+	chmod 755 gxvoxtonebender-20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/gxvoxtonebender_20170424_amd64.deb gxvoxtonebender-20170424
+Directory gxvoxtonebender-20170424 prepared.
+Processing files: gxvoxtonebender-20170424-2.x86_64
+Provides: gxvoxtonebender = 20170424-2 gxvoxtonebender(x86-64) = 20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
+Wrote: ../gxvoxtonebender-20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.XSYIEE
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/gxvoxtonebender-20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.QEK0bS
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb' prerm 2>/dev/null
+	mkdir rkrlv2-0.0.0+git20170424
+	chmod 755 rkrlv2-0.0.0+git20170424
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/tmp/debs/rkrlv2_0.0.0+git20170424-1kxstudio1_amd64.deb rkrlv2-0.0.0+git20170424
+Directory rkrlv2-0.0.0+git20170424 prepared.
+Processing files: rkrlv2-0.0.0+git20170424-2.x86_64
+Provides: rkrlv2 = 0.0.0+git20170424-2 rkrlv2(x86-64) = 0.0.0+git20170424-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
+Wrote: ../rkrlv2-0.0.0+git20170424-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.ElETDO
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/rkrlv2-0.0.0+git20170424-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.lQokje
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/tmp/debs/sineshaper_0.4.2-8kxstudio3_amd64.deb' | tar tf -
