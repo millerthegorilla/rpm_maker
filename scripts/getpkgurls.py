@@ -12,6 +12,7 @@
 
 #    You should have received a copy of the GNU General Public License
 #    along with rpm_maker.  If not, see <https://www.gnu.org/licenses/>.
+#    (c) 2018 - James Stewart Miller
 import importlib
 import sys
 from os import environ

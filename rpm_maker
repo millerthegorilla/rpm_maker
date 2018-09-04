@@ -12,6 +12,7 @@
 
 #    You should have received a copy of the GNU General Public License
 #    along with rpm_maker.  If not, see <https://www.gnu.org/licenses/>.
+#    (c) 2018 - James Stewart Miller
 #!/bin/bash
 CLEAN=false
 
@@ -77,7 +78,7 @@ usage()
 	echo "usage: rpm_maker <options>"
 	echo "		-r | --rpmbuild filename - buildrpm from existing list"
 	echo "					   where filename is optional listname>"
-	echo "		-l | --lynxdump 	 - convert list of urls from launchpad"
+	echo "		-l | --lynxdump		 - convert list of urls from launchpad"
 	echo "					   to urls to debs"
 	echo "		-g | --getpkgs		 - get list of pkgs from launchpad"
 	echo "		-s | --setpkg	%pkg	 - set pkgname to download and convert"
@@ -86,12 +87,14 @@ usage()
 	echo "		-t | --setteam	%team	 - set Team to use for obtaining"
 	echo "					   urllist from launchpad"
 	echo "		-a | --arch	%arch	 - specify the architecture amd64 | x386"
+	echo "					   defaults to amd64"
 	echo "		-d | --debs		 - download the debs files but do not"
 	echo "					   process them with alien etc.  Default is false"
 	echo "		-c | --clean		 - clean the tmp directory of build"
 	echo "					   files etc when rpm_maker is finished"
 	echo "		-x | --cleansrc		 - clean the build sources and deb files"
 	echo "					   defaults to true"
+	echo "		-h | --help		 - this message"
 	echo "		________________________________________________________________"
 	echo "		no parameters will download debs and build them into ./tmp/rpms"
 }
