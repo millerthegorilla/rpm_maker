@@ -8,7 +8,8 @@ Also, its my first real bash scripting, so don't be surprised by bad techniques,
 That said, I created the project to download and install debs from the great KXStudio project, but it can be used for any project.
 The usage is below, but be aware that the script needs the url name - not the display name - 
 for instance - the kxstudio-debian project uses a ppa that has the displayname of 'Applications', but the script will want the url name which is 'apps'.
-Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and hth
+Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and the format can differ depending on project.  Like I say, it is a hack, but I will probably have a look at a better way in the near future.
+In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTUwMDAwOV19
+eyJoaXN0b3J5IjpbMTAwNTUzODU2N119
 -->
