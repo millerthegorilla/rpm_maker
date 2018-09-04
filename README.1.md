@@ -1,5 +1,5 @@
 # rpm_maker
-A script to access and download debs from launchpad and convert them to rpms
+a script to access and download debs from launchpad and convert them to A script to access and download debs from launchpad and convert them to rpms
 
 rpm_maker connects to launchpad via the rest api and downloads either all the binary packages for a ppa, and then converts them from debs to rpms, or just a single package.
 
@@ -14,7 +14,7 @@ for instance - the kxstudio-debian project uses a ppa that has the displayname o
 
 Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and the format can differ depending on project.  Like I say, it is a hack, but I will probably have a look at a better way in the near future.
 
-In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa
+In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa.  Some of these will be older builds and some will be unnecessary.
 
 usage: rpm_maker %options%
 		-r | --rpmbuild filename - buildrpm from existing list
@@ -38,5 +38,5 @@ usage: rpm_maker %options%
 		no parameters will download debs and build them into ./tmp/rpms
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDE0NDU0M119
+eyJoaXN0b3J5IjpbLTY5Mjg1MzI2NF19
 -->
