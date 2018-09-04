@@ -73,46 +73,52 @@ sort $IN_FILE | uniq -u | while read -r line || [[ -n "$line" ]]; do
 	fi
 	RET=$?
 	echo "debs_only is $DEBS_ONLY"
-	if [[ $RET -eq 0 && $DEBS_ONLY==false ]]; then
-		cd $RPM_BUILD_ROOT
-		sudo alien -r -g -v $tmppath >> "$PROJ_ROOT/log/build_rpms.log" 2>&1 | tee -a "$PROJ_ROOT/log/build_rpms.log"
+	if [ $DEBS_ONLY != true ]; then
+		if [ $RET -eq 0 ]; then
+			cd $RPM_BUILD_ROOT
+			sudo alien -r -g -v $tmppath >> "$PROJ_ROOT/log/build_rpms.log" 2>&1 | tee -a "$PROJ_ROOT/log/build_rpms.log"
 
-		aliendir=$(find . -maxdepth 1 -type d -name '[^.]?*' -printf %f -quit)
-		echo "aliendir is $aliendir"
+			aliendir=$(find . -maxdepth 1 -type d -name '[^.]?*' -printf %f -quit)
+			echo "aliendir is $aliendir"
 
-		specfilename=$(find $RPM_BUILD_ROOT$aliendir -type f -name \*.spec)
-		specfilename=$(basename $specfilename)
-		echo "specfilename is $specfilename"
+			specfilename=$(find $RPM_BUILD_ROOT$aliendir -type f -name \*.spec)
+			specfilename=$(basename $specfilename)
+			echo "specfilename is $specfilename"
 
-		if [ $ARCH=='amd64' ]; then
-			adir=$(echo $specfilename | sed 's/spec/x86_64\//')
-        	else
-			adir=$(echo $specfilename | sed 's/spec/x386\//')
-	        fi
-		echo "adir is $adir"
+			if [ $ARCH=='amd64' ]; then
+				adir=$(echo $specfilename | sed 's/spec/x86_64\//')
+	        	else
+				adir=$(echo $specfilename | sed 's/spec/x386\//')
+		        fi
+			echo "adir is $adir"
 
-		mv "$RPM_BUILD_ROOT$aliendir" "$RPM_BUILD_ROOT$adir"
+			mv "$RPM_BUILD_ROOT$aliendir" "$RPM_BUILD_ROOT$adir"
 
-		specfilepath="$RPM_BUILD_ROOT$adir$specfilename"
+			specfilepath="$RPM_BUILD_ROOT$adir$specfilename"
 
-		#edit spec file to remove unnecessary prefixes
-		sudo sed -i 's#%dir "/"##' $specfilepath
-		sudo sed -i 's#%dir "/usr/bin/"##' $specfilepath
-        	sudo sed -i 's#%dir "/usr/share/"##' $specfilepath
-        	sudo sed -i 's#%dir "/usr/lib"##' $specfilepath
-		if [ ! -d "$BUILT_RPMS" ]; then
-  			mkdir $BUILT_RPMS
+			#edit spec file to remove unnecessary prefixes
+			sudo sed -i '/^%dir/ d' $specfilepath
+			#sudo sed -i 's#%dir "/usr/bin/"##' $specfilepath
+			#sudo sed -i 's#%dir "/usr/share/"##' $specfilepath
+			#sudo sed -i 's#%dir "/usr/lib/"##' $specfilepath
+			#sudo sed -i 's#%dir "/usr/share/icons/"##' $specfilepath
+
+			if [ ! -d "$BUILT_RPMS" ]; then
+  				mkdir $BUILT_RPMS
+			fi
+			cd $adir
+			sudo rpmbuild -bb --rebuild --clean --rmsource --root $RPM_ROOT $specfilepath >> "$PROJ_ROOT/log/build_rpms.log" 2>&1 | tee -a "$PROJ_ROOT/log/build_rpms.log"
+			fn=$(echo $adir | sed 's/\///' | sed 's/\.x/-x/' | awk '{print $1".rpm"}')
+			mv $RPM_BUILD_ROOT*.rpm $BUILT_RPMS$fn
+			echo fn >> $PROJ_ROOT/log/rpms_manifest.log
+			cd $CWD
+			if [ $CLEAN_SRC = true ]; then
+				sudo rm -rf $RPM_BUILD_ROOT*
+				rm $DEBS_DIR*
+			fi
+		else
+			echo "unable to download $filename"
 		fi
-		cd $adir
-		sudo rpmbuild -bb --rebuild --clean --rmsource --root $RPM_ROOT $specfilepath >> "$PROJ_ROOT/log/build_rpms.log" 2>&1 | tee -a "$PROJ_ROOT/log/build_rpms.log"
-		fn=$(echo $adir | sed 's/\///' | sed 's/\.x/-x/' | awk '{print $1".rpm"}')
-		mv $RPM_BUILD_ROOT*.rpm $BUILT_RPMS$fn
-		echo fn >> $PROJ_ROOT/log/rpms_manifest.log
-		cd $CWD
-		sudo rm -rf $RPM_BUILD_ROOT*
-		rm $DEBS_DIR*
-	else
-		echo "unable to download $filename"
 	fi
 	COUNTER=$((COUNTER + 1))
 	echo -ne "Building $COUNTER of $COUNTER_MAX RPMS"'\r'

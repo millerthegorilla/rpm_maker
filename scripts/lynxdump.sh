@@ -22,7 +22,7 @@ touch $OUT_FILE
 
 sort $IN_FILE | uniq -u | while read line || [[ -n "$line" ]]; do
 	weblink=$(lynx -dump $line | grep -A 2 -P "web_link" | tr -d [:blank:] | tr -d '\n' | sed s/web_link//)
-	lynx -dump $weblink |grep -P "(?!(.*changes)|(.*buildlog*.))https(.*)_$ARCH" -o | awk '{print $1".deb"}' >> $OUT_FILE 
+	lynx -dump $weblink |grep -P "(?!(.*changes)|(.*buildlog*.))https(.*)_($ARCH|all)" -o | awk '{print $1".deb"}' >> $OUT_FILE 
 	COUNTER=$((COUNTER + 1))
 	echo -ne "Processing $COUNTER of $COUNTER_MAX Urls"'\r'
 done

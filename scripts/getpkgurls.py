@@ -15,14 +15,19 @@ else:
 	arch = "amd64"
 
 if environ.get('TEAM') is not None:
-	lpteam = environ.get('TEAM')
+	lp_team = environ.get('TEAM')
 else:
-	lpteam = 'kxstudio-debian'
+	lp_team = 'kxstudio-debian'
 
 if environ.get('PPA') is not None:
 	lp_ppa = environ.get('PPA')
 else:
 	lp_ppa = 'plugins'
+
+if environ.get('PACKAGE') is not None:
+	lp_pkg = environ.get('PACKAGE')
+else:
+	lp_pkg = ""
 
 launchpad_spec = importlib.util.find_spec("launchpadlib")
 found = launchpad_spec is not None
@@ -34,7 +39,7 @@ from launchpadlib.launchpad import Launchpad
 try:
 	launchpad = Launchpad.login_anonymously('just testing', 'production')
 
-	team = launchpad.people[lpteam]
+	team = launchpad.people[lp_team]
 	ubuntu = launchpad.distributions["ubuntu"]
 
 	ppa = team.getPPAByName(distribution=ubuntu, name=lp_ppa)
@@ -50,7 +55,7 @@ try:
 		d_a_s.append(i.getDistroArchSeries(archtag=arch))
 	p_b_h = []
 	for i in d_a_s:
-		p_b_h.append(ppa.getPublishedBinaries(pocket="Release", status="Published",distro_arch_series=i))
+		p_b_h.append(ppa.getPublishedBinaries(binary_name=lp_pkg, pocket="Release", status="Published",distro_arch_series=i))
 	listfile = proj_root + "/lists/urls-for-lynx.list"
 
 	print("downloading urls from launchpad to " + listfile)

@@ -7,7 +7,8 @@ filename=$DEB_URLS
 ARCH="amd64"
 TEAM="kxstudio-debian"
 PPA="plugins"
-CLEAN=0
+CLEAN=false
+CLEAN_SRC=true
 DEBS_ONLY=false
 
 export DEBS_ONLY
@@ -15,6 +16,8 @@ export PROJ_ROOT
 export ARCH
 export TEAM
 export PPA
+export PACKAGE
+export CLEAN_SRC
 
 if [ ! -d "$TMP_DIR" ]; then
   mkdir -p $TMP_DIR
@@ -28,22 +31,17 @@ if [ ! -e "./log/getpkgurls.log" ]; then
 	touch "./log/getpkgurls.log"
 fi
 
-#if [ ! -e "./lists/urls-for-lynx.list" ]; then
-#	touch "./lists/urls-for-lynx.lists"
-#fi
-
 packages()
 {
+	if [ -s "$PROJ_ROOT/lists/urls-for-lynx.list" ]; then
+		mv "$PROJ_ROOT/lists/urls-for-lynx.list" "$PROJ_ROOT/lists/urls-for-lynx.list.old"
+	fi
 	python3 $GETPKGS
 }
 
 lynxdump()
 {
 	$PROJ_ROOT/scripts/lynxdump.sh
-	if (($? > 0)); then
-		echo "lynx failed to dump correctly"
-		exit 1
-	fi
 }
 
 rpmbuild()
@@ -61,15 +59,18 @@ usage()
 	echo "		-l | --lynxdump 	 - convert list of urls from launchpad"
 	echo "					   to urls to debs"
 	echo "		-g | --getpkgs		 - get list of pkgs from launchpad"
-	echo "		-p | --setppa		 - set PPA to use for obtaining"
+	echo "		-s | --setpkg	%pkg	 - set pkgname to download and convert"
+	echo "		-p | --setppa	%ppa	 - set PPA to use for obtaining"
 	echo "					   urllist from launchpad"
-	echo "		-t | --setteam		 - set Team to use for obtaining"
+	echo "		-t | --setteam	%team	 - set Team to use for obtaining"
 	echo "					   urllist from launchpad"
-	echo "		-a | --arch		 - specify the architecture amd64 | x386"
+	echo "		-a | --arch	%arch	 - specify the architecture amd64 | x386"
 	echo "		-d | --debs		 - download the debs files but do not"
-	echo "					   process them with alien etc"
+	echo "					   process them with alien etc.  Default is false"
 	echo "		-c | --clean		 - clean the tmp directory of build"
 	echo "					   files etc when rpm_maker is finished"
+	echo "		-x | --cleansrc		 - clean the build sources and deb files"
+	echo "					   defaults to true"
 	echo "		________________________________________________________________"
 	echo "		no parameters will download debs and build them into ./tmp/rpms"
 }
@@ -89,25 +90,44 @@ while [ "$1" != "" ]; do
 	-g | --getpkgs )	packages
 				exit
 				;;
-	-t | --team )		shift
+	-s | --setpkgs )	shift
+				if [ "$1" != '' ]; then
+                                        PACKAGE=$1
+                                        export PACKAGE
+                                fi
+                                ;;
+	-t | --setteam )	shift
 				if [ "$1" != '' ]; then
                                         TEAM=$1
 					export TEAM
 				fi
 				;;
-	-p | --ppa )		shift
+	-p | --setppa )		shift
 				if [ "$1" != '' ]; then
                                         PPA=$1
 					export PPA
 				fi
 				;;
-	-a | --arch )		shift
+	-a | --setarch )	shift
 				if [ "$1" != '' ]; then
                                         ARCH=$1
 					export ARCH
 				fi
 				;;
-	-c | --clean )		CLEAN=1
+	-c | --clean )		shift
+				if [ "$1" = '' ]; then
+					CLEAN=true
+				else
+					CLEAN=$1
+				fi
+				;;
+	-x | --cleansrc )	shift
+				if [ "$1" = '' ]; then
+					CLEAN_SRC=true
+				else
+					CLEAN_SRC=$1
+				fi
+				export CLEAN_SRC
 				;;
 	-d | --debs )		DEBS_ONLY=true
 				export DEBS_ONLY
@@ -122,18 +142,26 @@ while [ "$1" != "" ]; do
 done
 
 packages
-if (($? == 0)); then
-	bob=lynxdump
-	echo "bob says hi with a $bob"
+RET=$?
+if [ $RET -eq 0 ]; then
+	lynxdump
 else
-	exit $?
+	echo "package urls failed to download with an exit code of $RET"
+	exit $RET
 fi
-if (($? == 0)); then
+RET=$?
+if [ $RET -eq 0 ]; then
 	rpmbuild
 else
-	exit $?
+	echo "lynxdump script failed with an exit code of $RET"
+	exit $RET
 fi
-if [ $CLEAN==1 ]; then
+RET=$?
+if [ $RET -ne 0 ]; then
+	echo "rpmbuild script failed with an exit code of $RET"
+	exit $RET
+fi
+if [ $CLEAN = true ]; then
 	sudo rm -rf tmp/*
 fi
 exit 0
