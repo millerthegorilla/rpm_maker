@@ -1,7 +1,23 @@
-#python3?
+#    This file is part of rpm_maker.
+
+#    rpm_maker is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    rpm_maker is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+#    You should have received a copy of the GNU General Public License
+#    along with rpm_maker.  If not, see <https://www.gnu.org/licenses/>.
 import importlib
 import sys
 from os import environ
+
+if sys.version_info[0] < 3:
+    raise Exception("Python 3 or a more recent version is required.")
 
 if environ.get('PROJ_ROOT') is not None:
 	proj_root = environ.get('PROJ_ROOT')
