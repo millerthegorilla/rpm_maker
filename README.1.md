@@ -9,7 +9,27 @@ That said, I created the project to download and install debs from the great KXS
 The usage is below, but be aware that the script needs the url name - not the display name - 
 for instance - the kxstudio-debian project uses a ppa that has the displayname of 'Applications', but the script will want the url name which is 'apps'.
 Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and the format can differ depending on project.  Like I say, it is a hack, but I will probably have a look at a better way in the near future.
-In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa 
+In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.
+usage: rpm_maker %options%
+		-r | --rpmbuild filename - buildrpm from existing list
+					   where filename is optional listname>
+		-l | --lynxdump 	 - convert list of urls from launchpad
+					   to urls to debs
+		-g | --getpkgs		 - get list of pkgs from launchpad
+		-s | --setpkg	%pkg	 - set pkgname to download and convert
+		-p | --setppa	%ppa	 - set PPA to use for obtaining
+					   urllist from launchpad
+		-t | --setteam	%team	 - set Team to use for obtaining
+					   urllist from launchpad
+		-a | --arch	%arch	 - specify the architecture amd64 | x386
+		-d | --debs		 - download the debs files but do not
+					   process them with alien etc.  Default is false
+		-c | --clean		 - clean the tmp directory of build
+					   files etc when rpm_maker is finished
+		-x | --cleansrc		 - clean the build sources and deb files
+					   defaults to true
+		________________________________________________________________
+		no parameters will download debs and build them into ./tmp/rpms
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTUzODU2N119
+eyJoaXN0b3J5IjpbLTE4NjAxMzY1MTBdfQ==
 -->
