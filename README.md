@@ -17,26 +17,48 @@ Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary fi
 In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa.  Some of these will be older builds and some will be unnecessary.
 
 usage: rpm_maker <options>
+
 		-r | --rpmbuild filename - buildrpm from existing list
+
 					   where filename is optional listname>
+
 		-l | --lynxdump		 - convert list of urls from launchpad
+
 					   to urls to debs
+
 		-g | --getpkgs		 - get list of pkgs from launchpad
+
 		-s | --setpkg	%pkg	 - set pkgname to download and convert
+
 		-p | --setppa	%ppa	 - set PPA to use for obtaining
+
 					   urllist from launchpad
+
 		-t | --setteam	%team	 - set Team to use for obtaining
+
 					   urllist from launchpad
+
 		-a | --arch	%arch	 - specify the architecture amd64 | x386
+
 					   defaults to amd64
+
 		-d | --debs		 - download the debs files but do not
+
 					   process them with alien etc.  Default is false
+
 		-c | --clean		 - clean the tmp directory of build
+
 					   files etc when rpm_maker is finished
+
 		-x | --cleansrc		 - clean the build sources and deb files
+
 					   defaults to true
+
 		-h | --help		 - this message
+
 		________________________________________________________________
+
 		no parameters will download debs and build them into ./tmp/rpms
+
 
 (c) 2018 - James Stewart Miller
