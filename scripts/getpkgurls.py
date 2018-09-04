@@ -9,6 +9,12 @@ else:
 	print("project root is not set")
 	sys.exit(1)
 
+if environ.get('LYNX_URLS') is not None:
+	listfile = environ.get('LYNX_URLS')
+else:
+	print("listfile is not set in getpkgurls.py")
+	sys.exit(1)
+
 if environ.get('ARCH') is not None:
 	arch = environ.get('ARCH')
 else:
@@ -28,6 +34,11 @@ if environ.get('PACKAGE') is not None:
 	lp_pkg = environ.get('PACKAGE')
 else:
 	lp_pkg = ""
+
+if environ.get('PKG_LOG') is not None:
+	pkglog = environ.get('PKG_LOG')
+else:
+	print("no log file for getpkgurls.py")
 
 launchpad_spec = importlib.util.find_spec("launchpadlib")
 found = launchpad_spec is not None
@@ -56,7 +67,6 @@ try:
 	p_b_h = []
 	for i in d_a_s:
 		p_b_h.append(ppa.getPublishedBinaries(binary_name=lp_pkg, pocket="Release", status="Published",distro_arch_series=i))
-	listfile = proj_root + "/lists/urls-for-lynx.list"
 
 	print("downloading urls from launchpad to " + listfile)
 
@@ -75,7 +85,7 @@ try:
 	sys.exit(0)
 except Exception as e:
 	print(e)
-	fl = open(proj_root + "/log/getpkgurls.log", "a")
+	fl = open(pkglog, "w+")
 	fl.write(e)
 	fl.close
 	sys.exit(1)
