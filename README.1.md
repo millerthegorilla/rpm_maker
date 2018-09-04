@@ -1,5 +1,5 @@
 # rpm_maker
-a script to access and download debs from launchpad and convert them to A script to access and download debs from launchpad and convert them to rpms
+a script to access and download debs from launchpad and convert them to rpmsA script to access and download debs from launchpad and convert them to rpms
 
 rpm_maker connects to launchpad via the rest api and downloads either all the binary packages for a ppa, and then converts them from debs to rpms, or just a single package.
 
@@ -38,5 +38,5 @@ usage: rpm_maker %options%
 		no parameters will download debs and build them into ./tmp/rpms
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Mjg1MzI2NF19
+eyJoaXN0b3J5IjpbLTExNDc3MTcyOTJdfQ==
 -->
