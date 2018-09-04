@@ -7,7 +7,8 @@ The script to download urls is a bit of a hack as the launchpad api wouldn't all
 Also, its my first real bash scripting, so don't be surprised by bad techniques, pitfalls or errors!  Any constructive criticism is always welcome.
 That said, I created the project to download and install debs from the great KXStudio project, but it can be used for any project.
 The usage is below, but be aware that the script needs the url name - not the display name - 
-for instance - the kxstudio-den
+for instance - the kxstudio-debian project uses a ppa that has the displayname of 'Applications', but the script will want the url name which is 'apps'.
+Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and hth
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5MjY2NF19
+eyJoaXN0b3J5IjpbMTkxNTUwMDAwOV19
 -->
