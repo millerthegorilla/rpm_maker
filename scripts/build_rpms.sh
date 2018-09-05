@@ -17,13 +17,30 @@
 CWD="$(pwd)"
 RPM_BUILD_ROOT="$CWD"/root/rpmbuild/BUILDROOT/
 RPM_ROOT="$CWD"
-IN_FILE="$DEB_URLS"
+IN_FILE=$PROJ_ROOT$LIST_DIR$DEB_URLS
 COUNTER=0
+NOW="Log created : $(date +"%m-%d-%Y-%T")"
 
+if [ ${BUILT_RPMS_DIR:0:1} != '/' ]; then
+	BUILT_RPMS_DIR="$PROJ_ROOT$BUILT_RPMS_DIR"
+fi
+
+if [ ${RPM_LOG:0:1} != '/' ]; then
+	RPM_LOG="$PROJ_ROOT$LOG_DIR$RPM_LOG"
+fi
+
+if [ ${RPM_MANIFEST:0:1} != '/' ]; then
+	RPM_MANIFEST="$PROJ_ROOT$LOG_DIR$RPM_MANIFEST"
+fi
+
+if [ ${DEBS_DIR:0:1} != '/' ]; then
+	DEBS_DIR="$PROJ_ROOT$TMP_DIR$DEBS_DIR"
+fi
 if [ -s "$RPM_LOG" ]; then
         mv "$RPM_LOG" "$RPM_LOG".old
 fi
 touch "$RPM_LOG"
+
 echo "Log created $NOW" >> "$RPM_LOG"
 
 if [ -s "$RPM_MANIFEST" ]; then
@@ -32,15 +49,15 @@ fi
 touch "$RPM_MANIFEST"
 echo "Manifest created $NOW" >> "$RPM_MANIFEST"
 
-echo "infile = $IN_FILE"
-if [ $# -ne 0 ]; then
+if [ $1 != "" ]; then
 	IN_FILE=$1
-	if [ ! -e "$IN_FILE" ]; then
-		if [ ! -s "$IN_FILE" ]; then
-			echo "$IN_FILE File for scripts/build_rpms.sh does not exist or is empty"
-			echo "perhaps check the options to rpm_maker?"
-			exit 127
-		fi
+fi
+echo "infile = $IN_FILE"
+if [ ! -e "$IN_FILE" ]; then
+	if [ ! -s "$IN_FILE" ]; then
+		echo "$IN_FILE File for scripts/build_rpms.sh does not exist or is empty"
+		echo "perhaps check the options to rpm_maker?"
+		exit 127
 	fi
 fi
 
