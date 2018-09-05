@@ -17,9 +17,9 @@ for instance - the kxstudio-debian project uses a ppa that has the displayname o
 Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and the format can differ depending on project.  Like I say, it is a hack, but I will probably have a look at a better way in the near future.
 
 In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa.  Some of these will be older builds and some will be unnecessary.
-If you want to install Cadence, Katia etc, then you will need to install python3-pyqt4, at least until the qt5 release.
-If you want to develop the idea, then using the rest api to download and compile from source obtained from launchpad might be a good idea.   Also, setting up selinux profiles from installed rpms is something I will look into.
-As this is a first bash at bash I have gone a little ott for what it is, to try and teach myself some of the concepts.  If you find any errors please let me know.
+If you want to install Cadence, Katia etc, then you will need to install python3-pyqt4, at least until the qt5 release.  You will also want to install the yum multimedia group for audio production - sudo yum groupinstall "Audio Production" which includes jackdbus etc
+If you want to develop the idea, then using the rest api to download and compile from source obtained from launchpad might be a good idea.
+I haven't tried this with i386 nor have I tested extensively, and as a relative noob to bash I wouldn't suggest this is production quality by any means, so use it at your own risk!
 
 examples:
 
@@ -76,6 +76,5 @@ usage: rpm_maker <options>
 
 		no parameters will download debs and build them into ./tmp/rpms
 
-There is an editable configuration file in the conf directory.  If you want to set the conf directory or file you will need to edit the rpm_maker scri[pt.
 
 (c) 2018 - James Stewart Miller
