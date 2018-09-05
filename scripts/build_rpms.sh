@@ -15,22 +15,22 @@
 #    (c) 2018 - James Stewart Miller
 #!/bin/bash
 CWD="$(pwd)"
-RPM_BUILD_ROOT="$CWD"/root/rpmbuild/BUILDROOT/
+RPM_BUILD_ROOT="$CWD"'/root/rpmbuild/BUILDROOT/'
 RPM_ROOT="$CWD"
-IN_FILE="$DEB_URLS"
+IN_FILE=config[DEB_URLS]
 COUNTER=0
 
-if [ -s "$RPM_LOG" ]; then
-        mv "$RPM_LOG" "$RPM_LOG".old
+if [ -s config[RPM_LOG] ]; then
+        mv config[RPM_LOG] config[RPM_LOG]'.old'
 fi
-touch "$RPM_LOG"
-echo "Log created $NOW" >> "$RPM_LOG"
+touch config[RPM_LOG]
+echo config[LOG_CREATE_MSG] >> config[RPM_LOG]
 
-if [ -s "$RPM_MANIFEST" ]; then
-        mv "$RPM_MANIFEST" "$RPM_MANIFEST".old
+if [ -s config[RPM_MANIFEST] ]; then
+        mv config[RPM_MANIFEST] config[RPM_MANIFEST]'.old'
 fi
-touch "$RPM_MANIFEST"
-echo "Manifest created $NOW" >> "$RPM_MANIFEST"
+touch config[RPM_MANIFEST]
+echo config[LOG_CREATE_MSG] >> config[RPM_MANIFEST]
 
 echo "infile = $IN_FILE"
 if [ $# -ne 0 ]; then
@@ -55,16 +55,16 @@ if [ ! -d "$RPM_ROOT" ]; then
   mkdir -p "$RPM_ROOT"
 fi
 
-if [ ! -d "$DEBS_DIR" ]; then
-  mkdir -p "$DEBS_DIR"
+if [ ! -d config[DEBS_DIR] ]; then
+  mkdir -p config[DEBS_DIR]
 fi
 
 if [ ! -d "$RPM_BUILD_ROOT" ]; then
   mkdir -p "$RPM_BUILD_ROOT"
 fi
 
-if [ ! -d "$BUILT_RPMS_DIR" ]; then
-  mkdir -p "$BUILT_RPMS_DIR"
+if [ ! -d config[BUILT_RPMS_DIR] ]; then
+  mkdir -p config[BUILT_RPMS_DIR]
 fi
 
 sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
@@ -74,31 +74,31 @@ sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
 	tmpurl=$(echo "$filename" | grep -E 'https.*?\.deb' -o)
 	echo 'tmpurl is '"$tmpurl"
 	tmpfile=$(echo "$tmpurl" | grep -E '[^/]+(?=/$|$)' -o)
-	echo 'arch is '"$ARCH"
+	echo 'arch is 'config[ARCH]
 
-	tmppath="$DEBS_DIR$tmpfile"
+	tmppath=config[DEBS_DIR]"$tmpfile"
 
 	echo 'tmpfile is '"$tmpfile"
-	echo 'processing '"$tmppath"
+	echo 'Processing '"$tmppath"
 	if [ ! -f "$tmppath" ]; then
 		echo "getting file"
-		wget "$filename" -O "$tmppath" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
+		wget "$filename" -O "$tmppath" >> config[RPM_LOG] 2>&1 | tee -a config[RPM_LOG]
 	fi
 	RET=$?
-	echo 'debs_only is '"$DEBS_ONLY"
-	if [ "$DEBS_ONLY" != true ]; then
-		if [ "$RET" -eq 0 ]; then
+	echo 'debs_only is 'config[DEBS_ONLY]
+	if [ config[DEBS_ONLY] != true ]; then
+		if [ $RET -eq 0 ]; then
 			cd "$RPM_BUILD_ROOT"
-			sudo alien -r -g -v "$tmppath" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
+			sudo alien -r -g -v "$tmppath" >> config[RPM_LOG] 2>&1 | tee -a config[RPM_LOG]
 
 			aliendir=$(find . -maxdepth 1 -type d -name '[^.]?*' -printf %f -quit)
 			echo 'aliendir is '"$aliendir"
 
 			specfilename=$(find "$RPM_BUILD_ROOT$aliendir" -type f -name \*.spec)
 			specfilename=$(basename "$specfilename")
-			echo 'specfilename is '"$specfilename" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
+			echo 'specfilename is '"$specfilename" >> config[RPM_LOG] 2>&1 | tee -a config[RPM_LOG]
 
-			if [ "$ARCH"=='amd64' ]; then
+			if [ config[ARCH]=='amd64' ]; then
 				adir=$(echo "$specfilename" | sed 's/spec/x86_64\//')
 	        	else
 				adir=$(echo "$specfilename" | sed 's/spec/x386\//')
@@ -113,14 +113,14 @@ sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
 			sudo sed -i '/^%dir/ d' "$specfilepath"
 
 			cd "$adir"
-			sudo rpmbuild -bb --rebuild --clean --rmsource --root "$RPM_ROOT" "$specfilepath" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
+			sudo rpmbuild -bb --rebuild --clean --rmsource --root "$RPM_ROOT" "$specfilepath" >> config[RPM_LOG] 2>&1 | tee -a config[RPM_LOG]
 			fn=$(echo "$adir" | sed 's/\///' | sed 's/\.x/-x/' | awk '{print $1".rpm"}')
-			mv "$RPM_BUILD_ROOT"*.rpm "$BUILT_RPMS_DIR$fn"
-			echo "$fn" >> "$RPM_MANIFEST"
+			mv "$RPM_BUILD_ROOT"*.rpm config[BUILT_RPMS_DIR]"$fn"
+			echo "$fn" >> config[RPM_MANIFEST]
 			cd "$CWD"
-			if [ "$CLEAN_SRC" = true ]; then
+			if [ config[CLEAN_SRC] = true ]; then
 				sudo rm -rf "$RPM_BUILD_ROOT"*
-				rm "$DEBS_DIR"*
+				rm config[DEBS_DIR]*
 			fi
 		else
 			echo "unable to download $filename"

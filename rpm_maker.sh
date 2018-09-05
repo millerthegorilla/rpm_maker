@@ -14,48 +14,61 @@
 #    along with rpm_maker.  If not, see <https://www.gnu.org/licenses/>.
 #    (c) 2018 - James Stewart Miller
 #!/bin/bash
-CLEAN=false
 
 PROJ_ROOT="$(pwd)"'/'
-set -a
-TMP_DIR="$PROJ_ROOT"'./tmp/'
-LIST_DIR="$PROJ_ROOT"'lists/'
-LOG_DIR="$PROJ_ROOT"'logs/'
-DEBS_DIR="$TMP_DIR"'debs/'
-BUILT_RPMS_DIR="$PROJ_ROOT"'rpms/'
-DEB_URLS="$LIST_DIR"'deburls.list'
-LYNX_URLS="$LIST_DIR"'urls_for_lynx.list'
-ARCH="amd64"
-TEAM="kxstudio-debian"
-PPA="plugins"
-CLEAN_SRC=true
-DEBS_ONLY=false
-PACKAGE=""
-PKG_LOG="$LOG_DIR"'getpkgurls.log'
-RPM_LOG="$LOG_DIR"'build_rpms.log'
-RPM_MANIFEST="$LOG_DIR"'rpms.manifest'
-NOW=$(date +"%m-%d-%Y-%T")
-set +a
 
-filename="$DEB_URLS"
+#defaults
+typeset -A config # init array
+config=( # set default values in config array
+[TMP_DIR]="$PROJ_ROOT"'./tmp/'
+[LIST_DIR]="$PROJ_ROOT"'lists/'
+[LOG_DIR]="$PROJ_ROOT"'logs/'
+[DEBS_DIR]="$TMP_DIR"'debs/'
+[BUILT_RPMS_DIR]="$PROJ_ROOT"'rpms/'
+[DEB_URLS]="$LIST_DIR"'deburls.list'
+[LYNX_URLS]="$LIST_DIR"'urls_for_lynx.list'
+[ARCH]="amd64"
+[TEAM]="kxstudio-debian"
+[PPA]="plugins"
+[CLEAN_SRC]=true
+[DEBS_ONLY]=false
+[PACKAGE]=""
+[PKG_LOG]="$LOG_DIR"'getpkgurls.log'
+[RPM_LOG]="$LOG_DIR"'build_rpms.log'
+[RPM_MANIFEST]="$LOG_DIR"'rpms.manifest'
+[LOG_CREATE_MSG]='Log created : '"$(date +"%m-%d-%Y-%T")"
+[CLEAN]=false
+)
 
-if [ ! -d "$TMP_DIR" ]; then
-	mkdir -p "$TMP_DIR"
+while read line
+do
+    if echo $line | grep -F = &>/dev/null
+    then
+        varname=$(echo "$line" | cut -d '=' -f 1)
+        config[$varname]=$(echo "$line" | cut -d '=' -f 2-)
+    fi
+done < myscript.conf
+export config
+
+filename=config[DEB_URLS]
+
+if [ ! -d config[TMP_DIR] ]; then
+	mkdir -p config[TMP_DIR]
 fi
 
-if [ ! -d "$LIST_DIR" ]; then
-	mkdir -p "$LIST_DIR"
+if [ ! -d config[LIST_DIR] ]; then
+	mkdir -p config[LIST_DIR]
 fi
 
-if [ ! -d "$LOG_DIR" ]; then
-	mkdir -p "$LOG_DIR"
+if [ ! -d config[LOG_DIR] ]; then
+	mkdir -p config[LOG_DIR]
 fi
 
-if [ -s "$PKG_LOG" ]; then
-        mv "$PKG_LOG" "$PKG_LOG"'.old'
+if [ -s config[PKG_LOG] ]; then
+        mv config[PKG_LOG] config[PKG_LOG]'.old'
 fi
 touch "$PKG_LOG"
-echo "Log created $NOW" >> "$PKG_LOG"
+echo "$LOG_CREATE_MSG" >> "$PKG_LOG"
 
 packages()
 {

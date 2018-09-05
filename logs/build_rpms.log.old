@@ -1,0 +1,340 @@
+Log created 09-05-2018-09:26:44
+--2018-09-05 09:26:56--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070489/+files/cadence-tools_0.8.1+git20170711_amd64.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.223, 91.189.89.222
+Connecting to launchpad.net (launchpad.net)|91.189.89.223|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261643/cadence-tools_0.8.1+git20170711_amd64.deb [following]
+--2018-09-05 09:26:56--  https://launchpadlibrarian.net/328261643/cadence-tools_0.8.1+git20170711_amd64.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.228, 91.189.89.229
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.228|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 443884 (433K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb’
+
+     0K .......... .......... .......... .......... .......... 11% 1.61M 0s
+    50K .......... .......... .......... .......... .......... 23% 3.01M 0s
+   100K .......... .......... .......... .......... .......... 34% 9.33M 0s
+   150K .......... .......... .......... .......... .......... 46% 9.34M 0s
+   200K .......... .......... .......... .......... .......... 57% 4.39M 0s
+   250K .......... .......... .......... .......... .......... 69% 7.84M 0s
+   300K .......... .......... .......... .......... .......... 80% 34.0M 0s
+   350K .......... .......... .......... .......... .......... 92% 2.50M 0s
+   400K .......... .......... .......... ...                  100% 2.79M=0.1s
+
+2018-09-05 09:26:58 (3.96 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb’ saved [443884/443884]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb' prerm 2>/dev/null
+	mkdir cadence-tools-0.8.1+git20170711
+	chmod 755 cadence-tools-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/cadence-tools_0.8.1+git20170711_amd64.deb cadence-tools-0.8.1+git20170711
+Directory cadence-tools-0.8.1+git20170711 prepared.
+specfilename is cadence-tools-0.8.1+git20170711-2.spec
+Processing files: cadence-tools-0.8.1+git20170711-2.x86_64
+Provides: cadence-tools = 0.8.1+git20170711-2 cadence-tools(x86-64) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash /usr/bin/env libQtCore.so.4()(64bit) libQtGui.so.4()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/cadence-tools-0.8.1+git20170711-2.x86_64
+Wrote: ../cadence-tools-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.9WP2rV
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/cadence-tools-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.Gy8xJs
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:26:59--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/cadence_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.222, 91.189.89.223
+Connecting to launchpad.net (launchpad.net)|91.189.89.222|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261890/cadence_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:26:59--  https://launchpadlibrarian.net/328261890/cadence_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.229, 91.189.89.228
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.229|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 83228 (81K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb’
+
+     0K .......... .......... .......... .......... .......... 61% 1.29M 0s
+    50K .......... .......... .......... .                    100% 36.8M=0.04s
+
+2018-09-05 09:26:59 (2.05 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb’ saved [83228/83228]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir cadence-0.8.1+git20170711
+	chmod 755 cadence-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/cadence_0.8.1+git20170711_all.deb cadence-0.8.1+git20170711
+Directory cadence-0.8.1+git20170711 prepared.
+specfilename is cadence-0.8.1+git20170711-2.spec
+Processing files: cadence-0.8.1+git20170711-2.x86_64
+Provides: cadence = 0.8.1+git20170711-2 cadence(x86-64) = 0.8.1+git20170711-2 config(cadence) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/cadence-0.8.1+git20170711-2.x86_64
+Wrote: ../cadence-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.z8B0Rk
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/cadence-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.PPOzeW
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:27:00--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/cadence-data_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.223, 91.189.89.222
+Connecting to launchpad.net (launchpad.net)|91.189.89.223|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261892/cadence-data_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:27:01--  https://launchpadlibrarian.net/328261892/cadence-data_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.228, 91.189.89.229
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.228|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 702744 (686K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb’
+
+     0K .......... .......... .......... .......... ..........  7% 1.54M 0s
+    50K .......... .......... .......... .......... .......... 14% 3.19M 0s
+   100K .......... .......... .......... .......... .......... 21% 12.8M 0s
+   150K .......... .......... .......... .......... .......... 29% 4.13M 0s
+   200K .......... .......... .......... .......... .......... 36% 6.49M 0s
+   250K .......... .......... .......... .......... .......... 43% 15.2M 0s
+   300K .......... .......... .......... .......... .......... 51%  770K 0s
+   350K .......... .......... .......... .......... .......... 58% 1.18M 0s
+   400K .......... .......... .......... .......... .......... 65% 55.3M 0s
+   450K .......... .......... .......... .......... .......... 72% 44.2M 0s
+   500K .......... .......... .......... .......... .......... 80% 26.8M 0s
+   550K .......... .......... .......... .......... .......... 87% 40.1M 0s
+   600K .......... .......... .......... .......... .......... 94% 10.8M 0s
+   650K .......... .......... .......... ......               100% 3.82M=0.2s
+
+2018-09-05 09:27:02 (3.38 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb’ saved [702744/702744]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir cadence-data-0.8.1+git20170711
+	chmod 755 cadence-data-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/cadence-data_0.8.1+git20170711_all.deb cadence-data-0.8.1+git20170711
+Directory cadence-data-0.8.1+git20170711 prepared.
+specfilename is cadence-data-0.8.1+git20170711-2.spec
+Processing files: cadence-data-0.8.1+git20170711-2.x86_64
+Provides: cadence-data = 0.8.1+git20170711-2 cadence-data(x86-64) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/cadence-data-0.8.1+git20170711-2.x86_64
+Wrote: ../cadence-data-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.HGq6TN
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/cadence-data-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.wWZVcz
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:27:03--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/cadence-unity-support_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.222, 91.189.89.223
+Connecting to launchpad.net (launchpad.net)|91.189.89.222|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261891/cadence-unity-support_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:27:04--  https://launchpadlibrarian.net/328261891/cadence-unity-support_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.229, 91.189.89.228
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.229|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3452 (3.4K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb’
+
+     0K ...                                                   100% 61.6M=0s
+
+2018-09-05 09:27:04 (61.6 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb’ saved [3452/3452]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir cadence-unity-support-0.8.1+git20170711
+	chmod 755 cadence-unity-support-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/cadence-unity-support_0.8.1+git20170711_all.deb cadence-unity-support-0.8.1+git20170711
+Directory cadence-unity-support-0.8.1+git20170711 prepared.
+specfilename is cadence-unity-support-0.8.1+git20170711-2.spec
+Processing files: cadence-unity-support-0.8.1+git20170711-2.x86_64
+Provides: cadence-unity-support = 0.8.1+git20170711-2 cadence-unity-support(x86-64) = 0.8.1+git20170711-2 config(cadence-unity-support) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/cadence-unity-support-0.8.1+git20170711-2.x86_64
+Wrote: ../cadence-unity-support-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.3lfsIT
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/cadence-unity-support-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.qeRHcI
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:27:04--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/catarina_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.223, 91.189.89.222
+Connecting to launchpad.net (launchpad.net)|91.189.89.223|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261894/catarina_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:27:05--  https://launchpadlibrarian.net/328261894/catarina_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.228, 91.189.89.229
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.228|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 76730 (75K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb’
+
+     0K .......... .......... .......... .......... .......... 66% 1.27M 0s
+    50K .......... .......... ....                            100% 49.6M=0.04s
+
+2018-09-05 09:27:05 (1.88 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb’ saved [76730/76730]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir catarina-0.8.1+git20170711
+	chmod 755 catarina-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/catarina_0.8.1+git20170711_all.deb catarina-0.8.1+git20170711
+Directory catarina-0.8.1+git20170711 prepared.
+specfilename is catarina-0.8.1+git20170711-2.spec
+Processing files: catarina-0.8.1+git20170711-2.x86_64
+Provides: catarina = 0.8.1+git20170711-2 catarina(x86-64) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/catarina-0.8.1+git20170711-2.x86_64
+Wrote: ../catarina-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.c18s1l
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/catarina-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.0WAZYe
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:27:06--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/catia_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.222, 91.189.89.223
+Connecting to launchpad.net (launchpad.net)|91.189.89.222|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261895/catia_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:27:06--  https://launchpadlibrarian.net/328261895/catia_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.229, 91.189.89.228
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.229|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 65582 (64K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb’
+
+     0K .......... .......... .......... .......... .......... 78% 1.53M 0s
+    50K .......... ....                                       100% 5.88M=0.03s
+
+2018-09-05 09:27:07 (1.83 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb’ saved [65582/65582]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir catia-0.8.1+git20170711
+	chmod 755 catia-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/catia_0.8.1+git20170711_all.deb catia-0.8.1+git20170711
+Directory catia-0.8.1+git20170711 prepared.
+specfilename is catia-0.8.1+git20170711-2.spec
+Processing files: catia-0.8.1+git20170711-2.x86_64
+Provides: catia = 0.8.1+git20170711-2 catia(x86-64) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/catia-0.8.1+git20170711-2.x86_64
+Wrote: ../catia-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.xP2I1H
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/catia-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.1922HE
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0
+--2018-09-05 09:27:07--  https://launchpad.net/~kxstudio-debian/+archive/ubuntu/apps/+build/13070490/+files/claudia_0.8.1+git20170711_all.deb
+Resolving launchpad.net (launchpad.net)... 91.189.89.223, 91.189.89.222
+Connecting to launchpad.net (launchpad.net)|91.189.89.223|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://launchpadlibrarian.net/328261896/claudia_0.8.1+git20170711_all.deb [following]
+--2018-09-05 09:27:08--  https://launchpadlibrarian.net/328261896/claudia_0.8.1+git20170711_all.deb
+Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.228, 91.189.89.229
+Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.228|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 394618 (385K) [application/x-debian-package]
+Saving to: ‘/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb’
+
+     0K .......... .......... .......... .......... .......... 12% 1.47M 0s
+    50K .......... .......... .......... .......... .......... 25% 3.48M 0s
+   100K .......... .......... .......... .......... .......... 38% 6.07M 0s
+   150K .......... .......... .......... .......... .......... 51% 20.8M 0s
+   200K .......... .......... .......... .......... .......... 64% 4.85M 0s
+   250K .......... .......... .......... .......... .......... 77% 14.1M 0s
+   300K .......... .......... .......... .......... .......... 90% 9.89M 0s
+   350K .......... .......... .......... .....                100% 10.4M=0.08s
+
+2018-09-05 09:27:09 (4.74 MB/s) - ‘/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb’ saved [394618/394618]
+
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' control 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' conffiles 2>/dev/null
+	dpkg-deb --fsys-tarfile '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' | tar tf -
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' postinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' postrm 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' preinst 2>/dev/null
+	dpkg-deb --info '/home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb' prerm 2>/dev/null
+	mkdir claudia-0.8.1+git20170711
+	chmod 755 claudia-0.8.1+git20170711
+	dpkg-deb -x /home/james/Src/kxstudio_plugins/./tmp/debs/claudia_0.8.1+git20170711_all.deb claudia-0.8.1+git20170711
+Directory claudia-0.8.1+git20170711 prepared.
+specfilename is claudia-0.8.1+git20170711-2.spec
+Processing files: claudia-0.8.1+git20170711-2.x86_64
+Provides: claudia = 0.8.1+git20170711-2 claudia(x86-64) = 0.8.1+git20170711-2
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash /usr/bin/env
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /root/rpmbuild/BUILDROOT/claudia-0.8.1+git20170711-2.x86_64
+Wrote: ../claudia-0.8.1+git20170711-2.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.kKtnH1
++ umask 022
++ cd /root/rpmbuild/BUILD
++ /usr/bin/rm -rf /root/rpmbuild/BUILDROOT/claudia-0.8.1+git20170711-2.x86_64
++ exit 0
+Executing(--clean): /bin/sh -e /home/james/Src/kxstudio_plugins/tmp/var/tmp/rpm-tmp.znGI27
++ umask 022
++ cd /root/rpmbuild/BUILD
++ exit 0

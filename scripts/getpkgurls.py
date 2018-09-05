@@ -77,8 +77,10 @@ try:
 		d_a_s.append(i.getDistroArchSeries(archtag=arch))
 	p_b_h = []
 	for i in d_a_s:
-		p_b_h.append(ppa.getPublishedBinaries(binary_name=lp_pkg, pocket="Release", status="Published",distro_arch_series=i))
-	print("amount of binary history urls is " + str(len(p_b_h)))
+		p_b_h.append(ppa.getPublishedBinaries(order_by_date=True, binary_name=lp_pkg, pocket="Release", status="Published",distro_arch_series=i))
+
+	# lp_buildcoll = ppa.getBuildRecords(build_state="Successfully built",pocket="Release")
+
 	print("downloading urls from launchpad to " + listfile)
 
 	f=open(listfile,"w+")
@@ -86,12 +88,14 @@ try:
 	for b in p_b_h:
 		if len(b):
 			for i in b:
-				if i.build_link not in lines_seen:
+				#get most recent - list ordered by date
+				build_link_slice = i.build_link[8:]
+				if build_link_slice not in lines_seen:
 					#unable to obtain link to binaryFileUrls
 					#from publishinghistory so using builds
 					#instead
 					f.write(i.build_link+"\n")
-					lines_seen.add(i.build_link)
+					lines_seen.add(build_link_slice)
 	f.close()
 	sys.exit(0)
 except Exception as e:
