@@ -15,82 +15,82 @@
 #    (c) 2018 - James Stewart Miller
 #!/bin/bash
 
-PROJ_ROOT="$(pwd)"'/'
-CONF_DIR="$PROJ_ROOT/conf/"
-CONF_FILE="$CONF_DIR"'rpm_maker.conf'
+PROJ_ROOT=$(pwd)/
+export PROJ_ROOT
+CONF_DIR="$PROJ_ROOT"conf/
+CONF_FILE="$CONF_DIR"rpm_maker.conf
 
 #defaults
 typeset -A config # init array
 config=( # set default values in config array
-[TMP_DIR]="$PROJ_ROOT"'tmp/'
-[LIST_DIR]="$PROJ_ROOT"'lists/'
-[LOG_DIR]="$PROJ_ROOT"'logs/'
-[DEBS_DIR]=${config[TMP_DIR]}'debs/'
-[BUILT_RPMS_DIR]="$PROJ_ROOT"'rpms/'
-[DEB_URLS]=${config[LIST_DIR]}'deburls.list'
-[LYNX_URLS]=${config[LIST_DIR]}'urls_for_lynx.list'
-[ARCH]="amd64"
-[TEAM]="kxstudio-debian"
-[PPA]="plugins"
+[TMP_DIR]=tmp/
+[LIST_DIR]=lists/
+[LOG_DIR]=logs/
+[DEBS_DIR]=debs/
+[BUILT_RPMS_DIR]=rpms/
+[DEB_URLS]=deburls.list
+[LYNX_URLS]=urls_for_lynx.list
+[ARCH]=amd64
+[TEAM]=kxstudio-debian
+[PPA]=apps
 [CLEAN_SRC]=true
 [DEBS_ONLY]=false
-[PACKAGE]=""
-[PKG_LOG]=${config[LOG_DIR]}'getpkgurls.log'
-[RPM_LOG]=${config[LOG_DIR]}'build_rpms.log'
-[RPM_MANIFEST]=${config[LOG_DIR]}'rpms.manifest'
-[LOG_CREATE_MSG]='Log created : '"$(date +"%m-%d-%Y-%T")"
+[PACKAGE]=cadence
+[PKG_LOG]=getpkgurls.log
+[RPM_LOG]=build_rpms.log
+[RPM_MANIFEST]=rpms.manifest
+#[LOG_CREATE_MSG]=Log created : "$(date +"%m-%d-%Y-%T")"
 [CLEAN]=false
 )
 
 get_conf()
 {
-	grep -v '^[[:space:]]*#' "$CONF_FILE" | while read line
+	while read line
 	do
-		if echo $line | grep -F = &>/dev/null
-		then
-			varname=$(echo "$line" | cut -d '=' -f 1)
-			${config[$varname]}=$(echo "$line" | cut -d '=' -f 2-)
+		if echo $line | grep -v '^[[:space:]]*#' &>/dev/null
+		then 
+			varname=$(echo "$line" | cut -d '=' -f 1 | tr -d [])
+			config[$varname]=$(echo "$line" | cut -d '=' -f 2-)
 		fi
 	done < "$CONF_FILE"
 }
 
 export_env()
 {
-	for i in "${!${config[@]}}"
+	for i in "${!config[@]}"
 	do   
-		export "$i=${${config[$i]}}"
+		export $i="${config[$i]}"
 	done
-	exit
 }
 
 prepare_files()
 {
-	if [ ! -d ${config[TMP_DIR]} ]; then
-		mkdir -p ${config[TMP_DIR]}
+	if [ ! -d "$PROJ_ROOT${config[TMP_DIR]}" ]; then
+		mkdir -p "$PROJ_ROOT${config[TMP_DIR]}"
 	fi
 
-	if [ ! -d ${config[LIST_DIR]} ]; then
-		mkdir -p ${config[LIST_DIR]}
+	if [ ! -d "$PROJ_ROOT${config[LIST_DIR]}" ]; then
+		mkdir -p "$PROJ_ROOT${config[LIST_DIR]}"
 	fi
 
-	if [ ! -d ${config[LOG_DIR]} ]; then
-		mkdir -p ${config[LOG_DIR]}
+	if [ ! -d "$PROJ_ROOT${config[LOG_DIR]}" ]; then
+		mkdir -p "$PROJ_ROOT${config[LOG_DIR]}"
 	fi
 
-	if [ -s ${config[PKG_LOG]} ]; then
-		mv ${config[PKG_LOG]} ${config[PKG_LOG]}'.old'
+	if [ -s "$PROJ_ROOT${config[LOG_DIR]}${config[PKG_LOG]}" ]; then
+		mv "$PROJ_ROOT${config[LOG_DIR]}${config[PKG_LOG]}" "$PROJ_ROOT${config[LOG_DIR]}${config[PKG_LOG]}.old"
 	fi
-	touch ${config[PKG_LOG]}
-	echo ${config[LOG_CREATE_MSG]} >> ${config[PKG_LOG]}
+	touch "$PROJ_ROOT${config[LOG_DIR]}${config[PKG_LOG]}"
+	echo $LOG_CREATE_MSG >> "$PROJ_ROOT${config[LOG_DIR]}${config[PKG_LOG]}"
 }
 
 packages()
 {
-	if [ -s ${config[LYNX_URLS]} ]; then
-		mv ${config[LYNX_URLS]} ${config[LYNX_URLS]}'.old'
+	if [ -s "${config[PROJ_ROOT]}${config[LIST_DIR]}${config[LYNX_URLS]}" ]; then
+		mv "${config[PROJ_ROOT]}${config[LIST_DIR]}${config[LYNX_URLS]}" "${config[PROJ_ROOT]}${config[LIST_DIR]}${config[LYNX_URLS]}.old"
 	fi
-	touch ${config[LYNX_URLS]}
-	python3 "$PROJ_ROOT"'scripts/getpkgurls.py'
+	touch "${config[PROJ_ROOT]}${config[LIST_DIR]}${config[LYNX_URLS]}"
+	python3 "${config[PROJ_ROOT]}scripts/getpkgurls.py"
 }
 
 lynxdump()
@@ -100,9 +100,14 @@ lynxdump()
 
 rpmbuild()
 {
-	echo 'Building RPMS from list at '"$PROJ_ROOT$filename"
-	cd ${config[TMP_DIR]}
-	"$PROJ_ROOT"'scripts/build_rpms.sh' "$1"
+	if [ $1 == "" ]; then
+		listfile="$PROJ_ROOT$LIST_DIR$DEB_URLS"
+	else
+		listfile=$1
+	fi
+	echo "Building RPMS from list at $PROJ_ROOT$1"
+	cd "${config[PROJ_ROOT]}${config[TMP_DIR]}"
+	"$PROJ_ROOT"scripts/build_rpms.sh $listfile
 }
 
 usage()
@@ -132,48 +137,44 @@ usage()
 	echo "		no parameters will download debs and build them into ./tmp/rpms"
 }
 
-export_env
-
 getcommands()
 {
 	while [ "$1" != "" ]; do
 		case $1 in
-			-r | --rpmbuild )       shift
+		-r | --rpmbuild )       shift
 					if [ "$1" != '' ]; then
 						rpmbuild $1
 					fi
 					exit
-									;;
-		-l | --lynxdump )
-					lynxdump
+					;;
+		-l | --lynxdump )	lynxdump
 					exit
 					;;
-		-g | --getpkgs )	
-					packages
+		-g | --getpkgs )	packages
 					exit
 					;;
 		-s | --setpkgs )	shift
 					if [ "$1" != '' ]; then
-										config[PACKAGE]=$1
-										export_env
-									fi
-									;;
+						config[PACKAGE]=$1
+						export_env
+					fi
+					;;
 		-t | --setteam )	shift
 					if [ "$1" != '' ]; then
-											config[TEAM]=$1
-											export_env
+						config[TEAM]=$1
+						export_env
 					fi
 					;;
 		-p | --setppa )		shift
 					if [ "$1" != '' ]; then
-											config[PPA]=$1
-											export_env
+						config[PPA]=$1
+						export_env
 					fi
 					;;
 		-a | --setarch )	shift
 					if [ "$1" != '' ]; then
-											config[ARCH]=$1
-											export_env
+						config[ARCH]=$1
+						export_env
 					fi
 					;;
 		-c | --clean )		shift
@@ -193,13 +194,13 @@ getcommands()
 					export_env
 					;;
 		-d | --debs )		config[DEBS_ONLY]=true
-							export_env
+					export_env
 					;;
-			-h | --help )           usage
-									exit 1
-									;;
-			* )                     usage
-									exit 1
+		-h | --help )		usage
+					exit 1
+					;;
+			* )		usage
+					exit 1
 		esac
 		shift
 	done
@@ -217,7 +218,7 @@ script_main()
 	fi
 	RET=$?
 	if [ $RET -eq 0 ]; then
-		rpmbuild
+		rpmbuild "$PROJ_ROOT${config[LIST_DIR]}${config[DEB_URLS]}"
 	else
 		echo "lynxdump script failed with an exit code of $RET"
 		exit $RET
@@ -235,6 +236,7 @@ script_main()
 
 get_conf
 export_env
-getcommands
+prepare_files
+getcommands $@
 export_env
 script_main

@@ -15,13 +15,13 @@
 #    (c) 2018 - James Stewart Miller
 #!/bin/bash
 
-IN_FILE="$LYNX_URLS"
-OUT_FILE="$DEB_URLS"
+IN_FILE="$PROJ_ROOT$LIST_DIR$LYNX_URLS"
+OUT_FILE="$PROJ_ROOT$LIST_DIR$DEB_URLS"
 
 if [ -s "$IN_FILE" ]; then
 	COUNTER_MAX=$(wc -l < "$IN_FILE")
 else
-	echo "$IN_FILE"' File does not exist for scripts/lynxdump.sh'
+	echo "$IN_FILE"' File is empty or does not exist for scripts/lynxdump.sh'
 	exit 127
 fi
 COUNTER=0
@@ -40,6 +40,6 @@ sort "$IN_FILE" | uniq -u | while read line || [[ -n "$line" ]]; do
 	COUNTER=$((COUNTER + 1))
 	echo -ne 'Processing '"$COUNTER"' of '"$COUNTER_MAX"' Urls\r'
 done
-echo "$DEB_URLS"
-echo "Binary deb url list contains $(wc -l < $DEB_URLS) addresses"  >> "$PKG_LOG" 2>&1 | tee -a "$PKG_LOG"
+
+echo "Binary deb url list contains $(wc -l < $PROJ_ROOT$LIST_DIR$DEB_URLS) addresses"  >> "$PROJ_ROOT$LOG_DIR$PKG_LOG" 2>&1 | tee -a "$PROJ_ROOT$LOG_DIR$PKG_LOG"
 exit 0

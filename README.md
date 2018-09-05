@@ -19,6 +19,7 @@ Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary fi
 In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa.  Some of these will be older builds and some will be unnecessary.
 If you want to install Cadence, Katia etc, then you will need to install python3-pyqt4, at least until the qt5 release.
 If you want to develop the idea, then using the rest api to download and compile from source obtained from launchpad might be a good idea.   Also, setting up selinux profiles from installed rpms is something I will look into.
+As this is a first bash at bash I have gone a little ott for what it is, to try and teach myself some of the concepts.  If you find any errors please let me know.
 
 examples:
 
@@ -75,5 +76,6 @@ usage: rpm_maker <options>
 
 		no parameters will download debs and build them into ./tmp/rpms
 
+There is an editable configuration file in the conf directory.  If you want to set the conf directory or file you will need to edit the rpm_maker scri[pt.
 
 (c) 2018 - James Stewart Miller
