@@ -17,30 +17,34 @@
 CLEAN=false
 
 PROJ_ROOT="$(pwd)"'/'
-#set -a
-export TMP_DIR="$PROJ_ROOT"'./tmp/'
-export LIST_DIR="lists/"
-export LOG_DIR="$PROJ_ROOT"'logs/'
-export DEBS_DIR="$TMP_DIR"'debs/'
-export BUILT_RPMS_DIR="$PROJ_ROOT"'rpms/'
-export DEB_URLS="$PROJ_ROOT$LIST_DIR"'deburls.list'
-export LYNX_URLS="$PROJ_ROOT$LIST_DIR"'urls_for_lynx.list'
-export ARCH="amd64"
-export TEAM="kxstudio-debian"
-export PPA="plugins"
-export CLEAN_SRC=true
-export DEBS_ONLY=false
-export PACKAGE=""
-export PKG_LOG="$LOG_DIR"'getpkgurls.log'
-export RPM_LOG="$LOG_DIR"'build_rpms.log'
-export RPM_MANIFEST="$LOG_DIR"'rpms.manifest'
-export NOW=$(date +"%m-%d-%Y-%T")
-# set +a
+set -a
+TMP_DIR="$PROJ_ROOT"'./tmp/'
+LIST_DIR="$PROJ_ROOT"'lists/'
+LOG_DIR="$PROJ_ROOT"'logs/'
+DEBS_DIR="$TMP_DIR"'debs/'
+BUILT_RPMS_DIR="$PROJ_ROOT"'rpms/'
+DEB_URLS="$LIST_DIR"'deburls.list'
+LYNX_URLS="$LIST_DIR"'urls_for_lynx.list'
+ARCH="amd64"
+TEAM="kxstudio-debian"
+PPA="plugins"
+CLEAN_SRC=true
+DEBS_ONLY=false
+PACKAGE=""
+PKG_LOG="$LOG_DIR"'getpkgurls.log'
+RPM_LOG="$LOG_DIR"'build_rpms.log'
+RPM_MANIFEST="$LOG_DIR"'rpms.manifest'
+NOW=$(date +"%m-%d-%Y-%T")
+set +a
 
 filename="$DEB_URLS"
 
 if [ ! -d "$TMP_DIR" ]; then
 	mkdir -p "$TMP_DIR"
+fi
+
+if [ ! -d "$LIST_DIR" ]; then
+	mkdir -p "$LIST_DIR"
 fi
 
 if [ ! -d "$LOG_DIR" ]; then
@@ -58,6 +62,7 @@ packages()
 	if [ -s "$LYNX_URLS" ]; then
 		mv "$LYNX_URLS" "$LYNX_URLS"'.old'
 	fi
+	touch "$LYNX_URLS"
 	python3 "$PROJ_ROOT"'scripts/getpkgurls.py'
 }
 

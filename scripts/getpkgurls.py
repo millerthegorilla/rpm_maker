@@ -81,13 +81,11 @@ try:
 	print("amount of binary history urls is " + str(len(p_b_h)))
 	print("downloading urls from launchpad to " + listfile)
 
-	print(listfile)
 	f=open(listfile,"w+")
 	lines_seen = set()
 	for b in p_b_h:
 		if len(b):
 			for i in b:
-				print(i)
 				if i.build_link not in lines_seen:
 					#unable to obtain link to binaryFileUrls
 					#from publishinghistory so using builds

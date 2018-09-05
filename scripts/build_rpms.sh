@@ -82,7 +82,7 @@ sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
 	echo 'processing '"$tmppath"
 	if [ ! -f "$tmppath" ]; then
 		echo "getting file"
-		wget "$filename" -O "$tmppath"
+		wget "$filename" -O "$tmppath" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
 	fi
 	RET=$?
 	echo 'debs_only is '"$DEBS_ONLY"
@@ -96,7 +96,7 @@ sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
 
 			specfilename=$(find "$RPM_BUILD_ROOT$aliendir" -type f -name \*.spec)
 			specfilename=$(basename "$specfilename")
-			echo 'specfilename is '"$specfilename"
+			echo 'specfilename is '"$specfilename" >> "$RPM_LOG" 2>&1 | tee -a "$RPM_LOG"
 
 			if [ "$ARCH"=='amd64' ]; then
 				adir=$(echo "$specfilename" | sed 's/spec/x86_64\//')
@@ -127,6 +127,6 @@ sort "$IN_FILE" | uniq -u | while read -r line || [[ -n "$line" ]]; do
 		fi
 	fi
 	COUNTER=$((COUNTER + 1))
-	echo -ne Building "$COUNTER" of "$COUNTER_MAX" RPMS'\r'
+	echo -ne 'Building '"$COUNTER"' of '"$COUNTER_MAX"' RPMS\r'
 done
 exit 0

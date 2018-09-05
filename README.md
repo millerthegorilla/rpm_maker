@@ -7,7 +7,9 @@ Once the rpms have been created, you will need to install them manually.
 
 The script to download urls is a bit of a hack as the launchpad api wouldn't allow me to download the binary packages directly, which may be my fault - any help appreciated.
 Also, its my first real bash scripting, so don't be surprised by bad techniques, pitfalls or errors!  Any constructive criticism is always welcome.
-That said, I created the project to download and install debs from the great KXStudio project, but it can be used for any project.
+That said, I created the project to download and install debs from the great KXStudio project, to install on Fedora, but it can be used for any project.
+
+rpm_maker uses python3 for one of its scripts, and you will need to have launchpadlib installed.  I use virtualenv for ease and pip to install the launchpad library.
 
 The usage is below, but be aware that the script needs the url name - not the display name - 
 for instance - the kxstudio-debian project uses a ppa that has the displayname of 'Applications', but the script will want the url name which is 'apps'.
@@ -15,6 +17,19 @@ for instance - the kxstudio-debian project uses a ppa that has the displayname o
 Also, the script  'scripts/lynxdump.sh' uses a sed regex to obtain the binary file urls for download and the format can differ depending on project.  Like I say, it is a hack, but I will probably have a look at a better way in the near future.
 
 In the meantime, for those of you wanting to install kxstudio plugins and apps etc on a Fedora os, it should work fine, with the defaults for rpm_maker being the team 'kxstudio-debian' and the ppa being 'plugins'.  Usage of the script with no options will download and convert all the plugins in the ppa.  Some of these will be older builds and some will be unnecessary.
+If you want to install Cadence, Katia etc, then you will need to install python3-pyqt4, at least until the qt5 release.
+If you want to develop the idea, then using the rest api to download and compile from source obtained from launchpad might be a good idea.   Also, setting up selinux profiles from installed rpms is something I will look into.
+
+examples:
+
+		./rpm_maker	
+
+				download and convert kxstudio plugins (a lot of files)
+				there will be mixed version rpms so check before installing
+
+		./rpm_maker -t kxstudio-debian -p apps -s cadence
+
+				download and convert the package cadence from the apps ppa of the kxstudio-debian team
 
 usage: rpm_maker <options>
 
