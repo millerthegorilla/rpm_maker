@@ -5,6 +5,8 @@ rpm_maker connects to launchpad via the rest api and downloads either all the bi
 
 Once the rpms have been created, you will need to install them manually.
 
+Dependencies required include rpmbuild (dnf), alien (dnf), launchpadlib (pip). 
+
 The script to download urls is a bit of a hack as the launchpad api wouldn't allow me to download the binary packages directly, which may be my fault - any help appreciated.
 Also, its my first real bash scripting, so don't be surprised by bad techniques, pitfalls or errors!  Any constructive criticism is always welcome.
 That said, I created the project to download and install debs from the great KXStudio project, to install on Fedora, but it can be used for any project.
