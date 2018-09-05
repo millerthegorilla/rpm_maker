@@ -20,12 +20,6 @@ from os import environ
 if sys.version_info[0] < 3:
     raise Exception("Python 3 or a more recent version is required.")
 
-if environ.get('PROJ_ROOT') is not None:
-	proj_root = environ.get('PROJ_ROOT')
-else:
-	print("project root is not set")
-	sys.exit(1)
-
 if environ.get('LYNX_URLS') is not None:
 	listfile = environ.get('LYNX_URLS')
 else:
@@ -65,7 +59,7 @@ if found is not True:
 
 from launchpadlib.launchpad import Launchpad
 try:
-	launchpad = Launchpad.login_anonymously('just testing', 'production')
+	launchpad = Launchpad.login_anonymously('rpm_maker.sh', 'production')
 
 	team = launchpad.people[lp_team]
 	ubuntu = launchpad.distributions["ubuntu"]
@@ -84,14 +78,16 @@ try:
 	p_b_h = []
 	for i in d_a_s:
 		p_b_h.append(ppa.getPublishedBinaries(binary_name=lp_pkg, pocket="Release", status="Published",distro_arch_series=i))
-
+	print("amount of binary history urls is " + str(len(p_b_h)))
 	print("downloading urls from launchpad to " + listfile)
 
+	print(listfile)
 	f=open(listfile,"w+")
 	lines_seen = set()
 	for b in p_b_h:
-		if b.__len__():
+		if len(b):
 			for i in b:
+				print(i)
 				if i.build_link not in lines_seen:
 					#unable to obtain link to binaryFileUrls
 					#from publishinghistory so using builds
@@ -102,7 +98,7 @@ try:
 	sys.exit(0)
 except Exception as e:
 	print(e)
-	fl = open(pkglog, "w+")
+	fl = open(pkglog, "a+")
 	fl.write(e)
 	fl.close
 	sys.exit(1)
