@@ -20,7 +20,9 @@ In the meantime, for those of you wanting to install kxstudio plugins and apps e
 
 If you want to install Cadence, Katia etc, then you will need to install python3-pyqt4, at least until the qt5 release.  
 You will also want to install the yum multimedia group for audio production - sudo yum groupinstall "Audio Production" which includes jackdbus etc
+
 If you want to develop the idea, then using the rest api to download and compile from source obtained from launchpad might be a good idea.
+
 I haven't tried this with i386 nor have I tested extensively, and as a relative noob to bash I wouldn't suggest this is production quality by any means, so use it at your own risk!
 
 examples:
