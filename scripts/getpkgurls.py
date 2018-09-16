@@ -13,7 +13,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with rpm_maker.  If not, see <https://www.gnu.org/licenses/>.
 #    (c) 2018 - James Stewart Miller
-import importlib
+from importlib import util
 import sys
 from os import environ
 
@@ -54,9 +54,9 @@ if environ.get('PKG_LOG') is not None:
 else:
 	print("no log file for getpkgurls.py")
 
-launchpad_spec = importlib.util.find_spec("launchpadlib")
-found = launchpad_spec is not None
-if found is not True:
+launchpad_spec = util.find_spec("launchpadlib")
+
+if util.find_spec("launchpadlib") == "":
 	print("You need to install launchpadlib for python")
 	sys.exit(1)
 

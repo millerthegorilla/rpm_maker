@@ -15,7 +15,17 @@
 #    (c) 2018 - James Stewart Miller
 #!/bin/bash
 
-PROJ_ROOT=$(pwd)/
+if [ $(python -c 'import sys; print(sys.version_info[:][0])') -le 2 ]; then
+	echo "your python version is too low - you need to use python3 for rpm_maker to work"
+	exit 1
+else
+	if [ "$(pip show launchpadlib)" = "" ]; then
+		read -n 1 -s -r -p "This will install launchpadlib python modules under a user prefix - Press any key to continue";echo
+		pip install --user launchpadlib
+	fi
+fi
+
+PROJ_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"/
 export PROJ_ROOT
 CONF_DIR="$PROJ_ROOT"conf/
 CONF_FILE="$CONF_DIR"rpm_maker.conf
@@ -23,6 +33,7 @@ CONF_FILE="$CONF_DIR"rpm_maker.conf
 #defaults
 typeset -A config # init array
 config=( # set default values in config array
+[PROJ_ROOT]=$PROJ_ROOT
 [TMP_DIR]=tmp/
 [LIST_DIR]=lists/
 [LOG_DIR]=logs/
